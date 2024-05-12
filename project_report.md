@@ -32,7 +32,7 @@ The tuning process optimized the performance of the model by adjusting parameter
 If more time was given, I would have spent it on feature engineering and hyperparameter tuning. There are a number of combinations of parameters that might work better than the others if tested.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
+|model|hpo1 [time_limit]|hpo2 [presets]|hpo3 [eval_metrics]|score|
 |--|--|--|--|--|
 |initial|600|best_quality|root_mean_squared_error|1.8028|
 |add_features|600|best_quality|root_mean_squared_error|0.6180|
