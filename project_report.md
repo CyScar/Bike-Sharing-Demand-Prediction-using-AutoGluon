@@ -6,7 +6,7 @@
 The submission needed to have all its values more than 0. Submissions with negative values were rejected by Kaggle.
 
 ### What was the top-ranked model that performed?
-WeightedEnsemble_L3 model with added features and new hyperparameters performed the best.
+According to Kaggle scores, the summary() method applied to the highest-scoring model shows that the WeightedEnsemble_L3 model with added features and new hyperparameters performed the best.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
