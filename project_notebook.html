@@ -1,0 +1,3483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>d2d75be3d8d1497f966b607a713cd7eb</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" data-execution_count="1"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="1vGTgTgkQfZt" data-outputId="216399b8-93ab-4046-fb2c-c8ea5b13a0e6">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>git clone https:<span class="op">//</span>github.com<span class="op">/</span>udacity<span class="op">/</span>nd009t<span class="op">-</span>c1<span class="op">-</span>intro<span class="op">-</span>to<span class="op">-</span>ml<span class="op">-</span>project<span class="op">-</span>starter</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Cloning into &#39;nd009t-c1-intro-to-ml-project-starter&#39;...
+remote: Enumerating objects: 30, done.ote: Counting objects: 100% (12/12), done.ote: Compressing objects: 100% (9/9), done.ote: Total 30 (delta 5), reused 3 (delta 3), pack-reused 18</code></pre>
+</div>
+</div>
+<section id="predict-bike-sharing-demand-with-autogluon-template"
+class="cell markdown" id="anHdnErD1AJD">
+<h1>Predict Bike Sharing Demand with AutoGluon Template</h1>
+</section>
+<section id="project-predict-bike-sharing-demand-with-autogluon"
+class="cell markdown" id="Z5c02J8p1AJF">
+<h2>Project: Predict Bike Sharing Demand with AutoGluon</h2>
+<p>This notebook is a template with each step that you need to complete
+for the project.</p>
+<p>Please fill in your code where there are explicit <code>?</code>
+markers in the notebook. You are welcome to add more cells and code as
+you see fit.</p>
+<p>Once you have completed all the code implementations, please export
+your notebook as a HTML file so the reviews can view your code. Make
+sure you have all outputs correctly outputted.</p>
+<p><code>File-&gt; Export Notebook As... -&gt; Export Notebook as HTML</code></p>
+<p>There is a writeup to complete as well after all code implememtation
+is done. Please answer all questions and attach the necessary tables and
+charts. You can complete the writeup in either markdown or PDF.</p>
+<p>Completing the code template and writeup template will cover all of
+the rubric points for this project.</p>
+<p>The rubric contains "Stand Out Suggestions" for enhancing the project
+beyond the minimum requirements. The stand out suggestions are optional.
+If you decide to pursue the "stand out suggestions", you can include the
+code in this notebook and also discuss the results in the writeup
+file.</p>
+</section>
+<section id="step-1-create-an-account-with-kaggle" class="cell markdown"
+id="SW8sEyjx1AJF">
+<h2>Step 1: Create an account with Kaggle</h2>
+</section>
+<section id="create-kaggle-account-and-download-api-key"
+class="cell markdown" id="Kj-s1If41AJF">
+<h3>Create Kaggle Account and download API key</h3>
+<p>Below is example of steps to get the API username and key. Each
+student will have their own username and key.</p>
+</section>
+<section
+id="step-2-download-the-kaggle-dataset-using-the-kaggle-python-library"
+class="cell markdown" id="ALemU1411AJF">
+<h2>Step 2: Download the Kaggle dataset using the kaggle python
+library</h2>
+</section>
+<section id="open-up-sagemaker-studio-and-use-starter-template"
+class="cell markdown" id="diYq0Sw11AJG">
+<h3>Open up Sagemaker Studio and use starter template</h3>
+</section>
+<div class="cell markdown" id="464KFZGy1AJG">
+<ol>
+<li>Notebook should be using a <code>ml.t3.medium</code> instance (2
+vCPU + 4 GiB)</li>
+<li>Notebook should be using kernal:
+<code>Python 3 (MXNet 1.8 Python 3.7 CPU Optimized)</code></li>
+</ol>
+</div>
+<section id="install-packages" class="cell markdown" id="GufJUb8Q1AJG">
+<h3>Install packages</h3>
+</section>
+<div class="cell code" id="8f9F_9sd1AJG">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">-</span>U pip</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">-</span>U setuptools wheel</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">-</span>U <span class="st">&quot;mxnet&lt;2.0.0&quot;</span> bokeh<span class="op">==</span><span class="fl">2.0.1</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install autogluon <span class="op">--</span>no<span class="op">-</span>cache<span class="op">-</span><span class="bu">dir</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Without --no-cache-dir, smaller aws instances may have trouble installing</span></span></code></pre></div>
+</div>
+<section id="setup-kaggle-api-key" class="cell markdown"
+id="WCYtP4r-1AJG">
+<h3>Setup Kaggle API Key</h3>
+</section>
+<div class="cell code" data-execution_count="4" id="Gi1Nicsw1AJH">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the .kaggle directory and an empty kaggle.json file</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mkdir <span class="op">-</span>p <span class="op">/</span>root<span class="op">/</span>.kaggle</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>touch <span class="op">/</span>root<span class="op">/</span>.kaggle<span class="op">/</span>kaggle.json</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>chmod <span class="dv">600</span> <span class="op">/</span>root<span class="op">/</span>.kaggle<span class="op">/</span>kaggle.json</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="5" id="fG_SX6xj1AJH">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill in your user name and key from creating the kaggle account and API token file</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>kaggle_username <span class="op">=</span> <span class="st">&quot;simran00s&quot;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>kaggle_key <span class="op">=</span> <span class="st">&quot;2ba6efdab59a06f7cdaed17b8f1f274e&quot;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Save API token the kaggle.json file</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;/root/.kaggle/kaggle.json&quot;</span>, <span class="st">&quot;w&quot;</span>) <span class="im">as</span> f:</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    f.write(json.dumps({<span class="st">&quot;username&quot;</span>: kaggle_username, <span class="st">&quot;key&quot;</span>: kaggle_key}))</span></code></pre></div>
+</div>
+<section id="download-and-explore-dataset" class="cell markdown"
+id="MrfaYHfB1AJH">
+<h3>Download and explore dataset</h3>
+</section>
+<section
+id="go-to-the-bike-sharing-demand-competition-and-agree-to-the-terms"
+class="cell markdown" id="enBRVCKl1AJH">
+<h3>Go to the <a
+href="https://www.kaggle.com/c/bike-sharing-demand">bike sharing demand
+competition</a> and agree to the terms</h3>
+</section>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="XGKRwU7P1AJH" data-outputId="f494e9d3-002c-44d7-a9a5-d745025e9380">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the dataset, it will be in a .zip file so you&#39;ll need to unzip it as well.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle competitions download <span class="op">-</span>c bike<span class="op">-</span>sharing<span class="op">-</span>demand</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># If you already downloaded it you can use the -o command to overwrite the file</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>unzip <span class="op">-</span>o bike<span class="op">-</span>sharing<span class="op">-</span>demand.<span class="bu">zip</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Downloading bike-sharing-demand.zip to /content
+100% 189k/189k [00:00&lt;00:00, 534kB/s]
+100% 189k/189k [00:00&lt;00:00, 534kB/s]
+Archive:  bike-sharing-demand.zip
+  inflating: sampleSubmission.csv    
+  inflating: test.csv                
+  inflating: train.csv               
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="q8NAH4j91AJH">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> autogluon.tabular <span class="im">import</span> TabularPredictor</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="wfzZRfipQ2fk" data-outputId="9ae6a0fa-ba0a-4018-9407-44e5be47b851">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the train dataset in pandas by reading the csv</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the parsing of the datetime column so you can use some of the `dt` features in pandas later</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>train <span class="op">=</span> pd.read_csv(<span class="st">&quot;train.csv&quot;</span>, parse_dates<span class="op">=</span>[<span class="st">&quot;datetime&quot;</span>])</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>train.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="23">
+
+  <div id="df-a0dbd7ce-3ce7-4c6f-9ff1-e8842ab1338e" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>datetime</th>
+      <th>season</th>
+      <th>holiday</th>
+      <th>workingday</th>
+      <th>weather</th>
+      <th>temp</th>
+      <th>atemp</th>
+      <th>humidity</th>
+      <th>windspeed</th>
+      <th>casual</th>
+      <th>registered</th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2011-01-01 00:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.84</td>
+      <td>14.395</td>
+      <td>81</td>
+      <td>0.0</td>
+      <td>3</td>
+      <td>13</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2011-01-01 01:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.02</td>
+      <td>13.635</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>8</td>
+      <td>32</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2011-01-01 02:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.02</td>
+      <td>13.635</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>5</td>
+      <td>27</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2011-01-01 03:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.84</td>
+      <td>14.395</td>
+      <td>75</td>
+      <td>0.0</td>
+      <td>3</td>
+      <td>10</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2011-01-01 04:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.84</td>
+      <td>14.395</td>
+      <td>75</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a0dbd7ce-3ce7-4c6f-9ff1-e8842ab1338e')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a0dbd7ce-3ce7-4c6f-9ff1-e8842ab1338e button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a0dbd7ce-3ce7-4c6f-9ff1-e8842ab1338e');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-47004074-39fd-414f-a933-d400936e4ff8">
+  <button class="colab-df-quickchart" onclick="quickchart('df-47004074-39fd-414f-a933-d400936e4ff8')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-47004074-39fd-414f-a933-d400936e4ff8 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="aXkTEVxlQ7nz" data-outputId="01ad263c-51fa-4ec2-f055-4d06435a5c5e">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the test pandas dataframe in pandas by reading the csv, remember to parse the datetime!</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> pd.read_csv(<span class="st">&quot;test.csv&quot;</span>, parse_dates<span class="op">=</span>[<span class="st">&quot;datetime&quot;</span>])</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>test.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="22">
+
+  <div id="df-dae08845-abb3-444a-8571-9f1248ac9955" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>datetime</th>
+      <th>season</th>
+      <th>holiday</th>
+      <th>workingday</th>
+      <th>weather</th>
+      <th>temp</th>
+      <th>atemp</th>
+      <th>humidity</th>
+      <th>windspeed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2011-01-20 00:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10.66</td>
+      <td>11.365</td>
+      <td>56</td>
+      <td>26.0027</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2011-01-20 01:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10.66</td>
+      <td>13.635</td>
+      <td>56</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2011-01-20 02:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10.66</td>
+      <td>13.635</td>
+      <td>56</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2011-01-20 03:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10.66</td>
+      <td>12.880</td>
+      <td>56</td>
+      <td>11.0014</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2011-01-20 04:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10.66</td>
+      <td>12.880</td>
+      <td>56</td>
+      <td>11.0014</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-dae08845-abb3-444a-8571-9f1248ac9955')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-dae08845-abb3-444a-8571-9f1248ac9955 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-dae08845-abb3-444a-8571-9f1248ac9955');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-d4fbd904-1720-4970-a03f-252219c09a50">
+  <button class="colab-df-quickchart" onclick="quickchart('df-d4fbd904-1720-4970-a03f-252219c09a50')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-d4fbd904-1720-4970-a03f-252219c09a50 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="P_1aEJ311AJH">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple output of the train dataset to view some of the min/max/varition of the dataset features.</span></span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="14tBqJzO1AJH" data-outputId="2bdcd7f7-3a0c-4c03-ed62-851793ba419b">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Same thing as train and test dataset</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>submission <span class="op">=</span> pd.read_csv(<span class="st">&quot;sampleSubmission.csv&quot;</span>, parse_dates<span class="op">=</span>[<span class="st">&quot;datetime&quot;</span>])</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>submission.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+
+  <div id="df-b3e89707-2965-4926-95bc-49200b4dc87e" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>datetime</th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2011-01-20 00:00:00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2011-01-20 01:00:00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2011-01-20 02:00:00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2011-01-20 03:00:00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2011-01-20 04:00:00</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b3e89707-2965-4926-95bc-49200b4dc87e')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-b3e89707-2965-4926-95bc-49200b4dc87e button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-b3e89707-2965-4926-95bc-49200b4dc87e');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-8c809d45-6adc-47ea-940b-79165b9618d0">
+  <button class="colab-df-quickchart" onclick="quickchart('df-8c809d45-6adc-47ea-940b-79165b9618d0')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-8c809d45-6adc-47ea-940b-79165b9618d0 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="step-3-train-a-model-using-autogluons-tabular-prediction"
+class="cell markdown" id="i8djXLH01AJH">
+<h2>Step 3: Train a model using AutoGluon’s Tabular Prediction</h2>
+</section>
+<div class="cell markdown" id="fA8_6YP51AJI">
+<p>Requirements:</p>
+<ul>
+<li>We are predicting <code>count</code>, so it is the label we are
+setting.</li>
+<li>Ignore <code>casual</code> and <code>registered</code> columns as
+they are also not present in the test dataset.</li>
+<li>Use the <code>root_mean_squared_error</code> as the metric to use
+for evaluation.</li>
+<li>Set a time limit of 10 minutes (600 seconds).</li>
+<li>Use the preset <code>best_quality</code> to focus on creating the
+best model.</li>
+</ul>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="oNxtmPCw1AJI" data-outputId="f9ea59bc-7bf6-4c02-d01d-5582592ee2a4">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>predictor <span class="op">=</span> TabularPredictor(label <span class="op">=</span> <span class="st">&quot;count&quot;</span>, eval_metric<span class="op">=</span><span class="st">&#39;root_mean_squared_error&#39;</span>).fit(train_data<span class="op">=</span>train.drop([<span class="st">&#39;casual&#39;</span>, <span class="st">&#39;registered&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    time_limit<span class="op">=</span><span class="dv">600</span>,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    presets<span class="op">=</span><span class="st">&quot;best_quality&quot;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>No path specified. Models will be saved in: &quot;AutogluonModels/ag-20240512_063436&quot;
+Presets specified: [&#39;best_quality&#39;]
+Setting dynamic_stacking from &#39;auto&#39; to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Dynamic stacking is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Detecting stacked overfitting by sub-fitting AutoGluon on the input data. That is, copies of AutoGluon will be sub-fit on subset(s) of the data. Then, the holdout validation data is used to detect stacked overfitting.
+Sub-fit(s) time limit is: 600 seconds.
+Starting holdout-based sub-fit for dynamic stacking. Context path is: AutogluonModels/ag-20240512_063436/ds_sub_fit/sub_fit_ho.
+Running the sub-fit in a ray process to avoid memory leakage.
+Spend 199 seconds for the sub-fit(s) during dynamic stacking.
+Time left for full fit of AutoGluon: 401 seconds.
+Starting full fit now with num_stack_levels 1.
+Beginning AutoGluon training ... Time limit = 401s
+AutoGluon will save models to &quot;AutogluonModels/ag-20240512_063436&quot;
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.12
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Sat Nov 18 15:31:17 UTC 2023
+CPU Count:          2
+Memory Avail:       10.31 GB / 12.67 GB (81.3%)
+Disk Space Avail:   75.01 GB / 107.72 GB (69.6%)
+===================================================
+Train Data Rows:    10886
+Train Data Columns: 9
+Label Column:       count
+Problem Type:       regression
+Preprocessing data ...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    10554.01 MB
+	Train Data (Original)  Memory Usage: 0.75 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 2 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+		Fitting DatetimeFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		(&#39;datetime&#39;, []) : 1 | [&#39;datetime&#39;]
+		(&#39;float&#39;, [])    : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+		(&#39;int&#39;, [])      : 5 | [&#39;season&#39;, &#39;holiday&#39;, &#39;workingday&#39;, &#39;weather&#39;, &#39;humidity&#39;]
+	Types of features in processed data (raw dtype, special dtypes):
+		(&#39;float&#39;, [])                : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+		(&#39;int&#39;, [])                  : 3 | [&#39;season&#39;, &#39;weather&#39;, &#39;humidity&#39;]
+		(&#39;int&#39;, [&#39;bool&#39;])            : 2 | [&#39;holiday&#39;, &#39;workingday&#39;]
+		(&#39;int&#39;, [&#39;datetime_as_int&#39;]) : 5 | [&#39;datetime&#39;, &#39;datetime.year&#39;, &#39;datetime.month&#39;, &#39;datetime.day&#39;, &#39;datetime.dayofweek&#39;]
+	0.3s = Fit runtime
+	9 features in original data used to generate 13 features in processed data.
+	Train Data (Processed) Memory Usage: 0.93 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 0.33s ...
+AutoGluon will gauge predictive performance using evaluation metric: &#39;root_mean_squared_error&#39;
+	This metric&#39;s sign has been flipped to adhere to being higher_is_better. The metric score can be multiplied by -1 to get the metric value.
+	To change this, specify the eval_metric parameter of Predictor()
+Large model count detected (112 configs) ... Only displaying the first 3 models of each family. To see all, set `verbosity=3`.
+User-specified model hyperparameters to be fit:
+{
+	&#39;NN_TORCH&#39;: [{}, {&#39;activation&#39;: &#39;elu&#39;, &#39;dropout_prob&#39;: 0.10077639529843717, &#39;hidden_size&#39;: 108, &#39;learning_rate&#39;: 0.002735937344002146, &#39;num_layers&#39;: 4, &#39;use_batchnorm&#39;: True, &#39;weight_decay&#39;: 1.356433327634438e-12, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r79&#39;, &#39;priority&#39;: -2}}, {&#39;activation&#39;: &#39;elu&#39;, &#39;dropout_prob&#39;: 0.11897478034205347, &#39;hidden_size&#39;: 213, &#39;learning_rate&#39;: 0.0010474382260641949, &#39;num_layers&#39;: 4, &#39;use_batchnorm&#39;: False, &#39;weight_decay&#39;: 5.594471067786272e-10, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r22&#39;, &#39;priority&#39;: -7}}],
+	&#39;GBM&#39;: [{&#39;extra_trees&#39;: True, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;XT&#39;}}, {}, &#39;GBMLarge&#39;],
+	&#39;CAT&#39;: [{}, {&#39;depth&#39;: 6, &#39;grow_policy&#39;: &#39;SymmetricTree&#39;, &#39;l2_leaf_reg&#39;: 2.1542798306067823, &#39;learning_rate&#39;: 0.06864209415792857, &#39;max_ctr_complexity&#39;: 4, &#39;one_hot_max_size&#39;: 10, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r177&#39;, &#39;priority&#39;: -1}}, {&#39;depth&#39;: 8, &#39;grow_policy&#39;: &#39;Depthwise&#39;, &#39;l2_leaf_reg&#39;: 2.7997999596449104, &#39;learning_rate&#39;: 0.031375015734637225, &#39;max_ctr_complexity&#39;: 2, &#39;one_hot_max_size&#39;: 3, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r9&#39;, &#39;priority&#39;: -5}}],
+	&#39;XGB&#39;: [{}, {&#39;colsample_bytree&#39;: 0.6917311125174739, &#39;enable_categorical&#39;: False, &#39;learning_rate&#39;: 0.018063876087523967, &#39;max_depth&#39;: 10, &#39;min_child_weight&#39;: 0.6028633586934382, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r33&#39;, &#39;priority&#39;: -8}}, {&#39;colsample_bytree&#39;: 0.6628423832084077, &#39;enable_categorical&#39;: False, &#39;learning_rate&#39;: 0.08775715546881824, &#39;max_depth&#39;: 5, &#39;min_child_weight&#39;: 0.6294123374222513, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r89&#39;, &#39;priority&#39;: -16}}],
+	&#39;FASTAI&#39;: [{}, {&#39;bs&#39;: 256, &#39;emb_drop&#39;: 0.5411770367537934, &#39;epochs&#39;: 43, &#39;layers&#39;: [800, 400], &#39;lr&#39;: 0.01519848858318159, &#39;ps&#39;: 0.23782946566604385, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r191&#39;, &#39;priority&#39;: -4}}, {&#39;bs&#39;: 2048, &#39;emb_drop&#39;: 0.05070411322605811, &#39;epochs&#39;: 29, &#39;layers&#39;: [200, 100], &#39;lr&#39;: 0.08974235041576624, &#39;ps&#39;: 0.10393466140748028, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r102&#39;, &#39;priority&#39;: -11}}],
+	&#39;RF&#39;: [{&#39;criterion&#39;: &#39;gini&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Gini&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;entropy&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Entr&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;squared_error&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;MSE&#39;, &#39;problem_types&#39;: [&#39;regression&#39;, &#39;quantile&#39;]}}],
+	&#39;XT&#39;: [{&#39;criterion&#39;: &#39;gini&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Gini&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;entropy&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Entr&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;squared_error&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;MSE&#39;, &#39;problem_types&#39;: [&#39;regression&#39;, &#39;quantile&#39;]}}],
+	&#39;KNN&#39;: [{&#39;weights&#39;: &#39;uniform&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Unif&#39;}}, {&#39;weights&#39;: &#39;distance&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Dist&#39;}}],
+}
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 108 L1 models ...
+Fitting model: KNeighborsUnif_BAG_L1 ... Training model for up to 267.04s of the 400.63s of remaining time.
+	-101.5462	 = Validation score   (-root_mean_squared_error)
+	0.07s	 = Training   runtime
+	0.09s	 = Validation runtime
+Fitting model: KNeighborsDist_BAG_L1 ... Training model for up to 266.82s of the 400.41s of remaining time.
+	-84.1251	 = Validation score   (-root_mean_squared_error)
+	0.06s	 = Training   runtime
+	0.1s	 = Validation runtime
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 266.61s of the 400.2s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.08%)
+	-131.4609	 = Validation score   (-root_mean_squared_error)
+	161.68s	 = Training   runtime
+	32.44s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 92.47s of the 226.06s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.08%)
+	-131.0542	 = Validation score   (-root_mean_squared_error)
+	45.37s	 = Training   runtime
+	2.01s	 = Validation runtime
+Fitting model: RandomForestMSE_BAG_L1 ... Training model for up to 32.72s of the 166.3s of remaining time.
+	-116.5484	 = Validation score   (-root_mean_squared_error)
+	31.59s	 = Training   runtime
+	0.92s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 360.0s of the 131.94s of remaining time.
+	Ensemble Weights: {&#39;KNeighborsDist_BAG_L1&#39;: 1.0}
+	-84.1251	 = Validation score   (-root_mean_squared_error)
+	0.04s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitting 106 L2 models ...
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 131.85s of the 131.8s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.10%)
+	-60.706	 = Validation score   (-root_mean_squared_error)
+	112.45s	 = Training   runtime
+	6.2s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 13.57s of the 13.52s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.10%)
+	-101.1761	 = Validation score   (-root_mean_squared_error)
+	84.54s	 = Training   runtime
+	0.36s	 = Validation runtime
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 360.0s of the -76.17s of remaining time.
+	Ensemble Weights: {&#39;LightGBMXT_BAG_L2&#39;: 0.944, &#39;LightGBM_BAG_L2&#39;: 0.056}
+	-60.5172	 = Validation score   (-root_mean_squared_error)
+	0.06s	 = Training   runtime
+	0.0s	 = Validation runtime
+AutoGluon training complete, total runtime = 477.28s ... Best model: &quot;WeightedEnsemble_L3&quot;
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load(&quot;AutogluonModels/ag-20240512_063436&quot;)
+</code></pre>
+</div>
+</div>
+<section
+id="review-autogluons-training-run-with-ranking-of-models-that-did-the-best"
+class="cell markdown" id="isCExc8b1AJI">
+<h3>Review AutoGluon's training run with ranking of models that did the
+best.</h3>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="jBtw7p3p1AJI" data-outputId="cc65b42f-f468-448c-eafc-3d97b089f415">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>predictor.fit_summary()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>*** Summary of fit() ***
+Estimated performance of each model:
+                    model   score_val              eval_metric  pred_time_val    fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0     WeightedEnsemble_L3  -60.517239  root_mean_squared_error      42.116557  435.802916                0.001254           0.059576            3       True          9
+1       LightGBMXT_BAG_L2  -60.706012  root_mean_squared_error      41.758712  351.208251                6.204485         112.446890            2       True          7
+2   KNeighborsDist_BAG_L1  -84.125061  root_mean_squared_error       0.098399    0.056065                0.098399           0.056065            1       True          2
+3     WeightedEnsemble_L2  -84.125061  root_mean_squared_error       0.099545    0.095678                0.001146           0.039613            2       True          6
+4         LightGBM_BAG_L2 -101.176060  root_mean_squared_error      35.910817  323.296450                0.356590          84.535089            2       True          8
+5   KNeighborsUnif_BAG_L1 -101.546199  root_mean_squared_error       0.086869    0.067531                0.086869           0.067531            1       True          1
+6  RandomForestMSE_BAG_L1 -116.548359  root_mean_squared_error       0.915901   31.587358                0.915901          31.587358            1       True          5
+7         LightGBM_BAG_L1 -131.054162  root_mean_squared_error       2.010108   45.366687                2.010108          45.366687            1       True          4
+8       LightGBMXT_BAG_L1 -131.460909  root_mean_squared_error      32.442950  161.683721               32.442950         161.683721            1       True          3
+Number of models trained: 9
+Types of models trained:
+{&#39;StackerEnsembleModel_RF&#39;, &#39;WeightedEnsembleModel&#39;, &#39;StackerEnsembleModel_KNN&#39;, &#39;StackerEnsembleModel_LGB&#39;}
+Bagging used: True  (with 8 folds)
+Multi-layer stack-ensembling used: True  (with 3 levels)
+Feature Metadata (Processed):
+(raw dtype, special dtypes):
+(&#39;float&#39;, [])                : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+(&#39;int&#39;, [])                  : 3 | [&#39;season&#39;, &#39;weather&#39;, &#39;humidity&#39;]
+(&#39;int&#39;, [&#39;bool&#39;])            : 2 | [&#39;holiday&#39;, &#39;workingday&#39;]
+(&#39;int&#39;, [&#39;datetime_as_int&#39;]) : 5 | [&#39;datetime&#39;, &#39;datetime.year&#39;, &#39;datetime.month&#39;, &#39;datetime.day&#39;, &#39;datetime.dayofweek&#39;]
+*** End of fit() summary ***
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.10/dist-packages/autogluon/core/utils/plots.py:169: UserWarning: AutoGluon summary plots cannot be created because bokeh is not installed. To see plots, please do: &quot;pip install bokeh==2.0.1&quot;
+  warnings.warn(&#39;AutoGluon summary plots cannot be created because bokeh is not installed. To see plots, please do: &quot;pip install bokeh==2.0.1&quot;&#39;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="8">
+<pre><code>{&#39;model_types&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: &#39;StackerEnsembleModel_KNN&#39;,
+  &#39;KNeighborsDist_BAG_L1&#39;: &#39;StackerEnsembleModel_KNN&#39;,
+  &#39;LightGBMXT_BAG_L1&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;LightGBM_BAG_L1&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;RandomForestMSE_BAG_L1&#39;: &#39;StackerEnsembleModel_RF&#39;,
+  &#39;WeightedEnsemble_L2&#39;: &#39;WeightedEnsembleModel&#39;,
+  &#39;LightGBMXT_BAG_L2&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;LightGBM_BAG_L2&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;WeightedEnsemble_L3&#39;: &#39;WeightedEnsembleModel&#39;},
+ &#39;model_performance&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: -101.54619908446061,
+  &#39;KNeighborsDist_BAG_L1&#39;: -84.12506123181602,
+  &#39;LightGBMXT_BAG_L1&#39;: -131.46090891834504,
+  &#39;LightGBM_BAG_L1&#39;: -131.054161598899,
+  &#39;RandomForestMSE_BAG_L1&#39;: -116.54835939455667,
+  &#39;WeightedEnsemble_L2&#39;: -84.12506123181602,
+  &#39;LightGBMXT_BAG_L2&#39;: -60.70601178658385,
+  &#39;LightGBM_BAG_L2&#39;: -101.17605979944919,
+  &#39;WeightedEnsemble_L3&#39;: -60.51723939917645},
+ &#39;model_best&#39;: &#39;WeightedEnsemble_L3&#39;,
+ &#39;model_paths&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: [&#39;KNeighborsUnif_BAG_L1&#39;],
+  &#39;KNeighborsDist_BAG_L1&#39;: [&#39;KNeighborsDist_BAG_L1&#39;],
+  &#39;LightGBMXT_BAG_L1&#39;: [&#39;LightGBMXT_BAG_L1&#39;],
+  &#39;LightGBM_BAG_L1&#39;: [&#39;LightGBM_BAG_L1&#39;],
+  &#39;RandomForestMSE_BAG_L1&#39;: [&#39;RandomForestMSE_BAG_L1&#39;],
+  &#39;WeightedEnsemble_L2&#39;: [&#39;WeightedEnsemble_L2&#39;],
+  &#39;LightGBMXT_BAG_L2&#39;: [&#39;LightGBMXT_BAG_L2&#39;],
+  &#39;LightGBM_BAG_L2&#39;: [&#39;LightGBM_BAG_L2&#39;],
+  &#39;WeightedEnsemble_L3&#39;: [&#39;WeightedEnsemble_L3&#39;]},
+ &#39;model_fit_times&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: 0.06753087043762207,
+  &#39;KNeighborsDist_BAG_L1&#39;: 0.05606484413146973,
+  &#39;LightGBMXT_BAG_L1&#39;: 161.68372058868408,
+  &#39;LightGBM_BAG_L1&#39;: 45.36668658256531,
+  &#39;RandomForestMSE_BAG_L1&#39;: 31.587357759475708,
+  &#39;WeightedEnsemble_L2&#39;: 0.03961324691772461,
+  &#39;LightGBMXT_BAG_L2&#39;: 112.44689011573792,
+  &#39;LightGBM_BAG_L2&#39;: 84.53508949279785,
+  &#39;WeightedEnsemble_L3&#39;: 0.059575796127319336},
+ &#39;model_pred_times&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: 0.0868685245513916,
+  &#39;KNeighborsDist_BAG_L1&#39;: 0.09839892387390137,
+  &#39;LightGBMXT_BAG_L1&#39;: 32.44295048713684,
+  &#39;LightGBM_BAG_L1&#39;: 2.010108232498169,
+  &#39;RandomForestMSE_BAG_L1&#39;: 0.915900707244873,
+  &#39;WeightedEnsemble_L2&#39;: 0.0011456012725830078,
+  &#39;LightGBMXT_BAG_L2&#39;: 6.2044854164123535,
+  &#39;LightGBM_BAG_L2&#39;: 0.35659027099609375,
+  &#39;WeightedEnsemble_L3&#39;: 0.0012543201446533203},
+ &#39;num_bag_folds&#39;: 8,
+ &#39;max_stack_level&#39;: 3,
+ &#39;model_hyperparams&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;KNeighborsDist_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;LightGBMXT_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;RandomForestMSE_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;WeightedEnsemble_L2&#39;: {&#39;use_orig_features&#39;: False,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBMXT_BAG_L2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;WeightedEnsemble_L3&#39;: {&#39;use_orig_features&#39;: False,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True}},
+ &#39;leaderboard&#39;:                     model   score_val              eval_metric  pred_time_val  \
+ 0     WeightedEnsemble_L3  -60.517239  root_mean_squared_error      42.116557   
+ 1       LightGBMXT_BAG_L2  -60.706012  root_mean_squared_error      41.758712   
+ 2   KNeighborsDist_BAG_L1  -84.125061  root_mean_squared_error       0.098399   
+ 3     WeightedEnsemble_L2  -84.125061  root_mean_squared_error       0.099545   
+ 4         LightGBM_BAG_L2 -101.176060  root_mean_squared_error      35.910817   
+ 5   KNeighborsUnif_BAG_L1 -101.546199  root_mean_squared_error       0.086869   
+ 6  RandomForestMSE_BAG_L1 -116.548359  root_mean_squared_error       0.915901   
+ 7         LightGBM_BAG_L1 -131.054162  root_mean_squared_error       2.010108   
+ 8       LightGBMXT_BAG_L1 -131.460909  root_mean_squared_error      32.442950   
+ 
+      fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  \
+ 0  435.802916                0.001254           0.059576            3   
+ 1  351.208251                6.204485         112.446890            2   
+ 2    0.056065                0.098399           0.056065            1   
+ 3    0.095678                0.001146           0.039613            2   
+ 4  323.296450                0.356590          84.535089            2   
+ 5    0.067531                0.086869           0.067531            1   
+ 6   31.587358                0.915901          31.587358            1   
+ 7   45.366687                2.010108          45.366687            1   
+ 8  161.683721               32.442950         161.683721            1   
+ 
+    can_infer  fit_order  
+ 0       True          9  
+ 1       True          7  
+ 2       True          2  
+ 3       True          6  
+ 4       True          8  
+ 5       True          1  
+ 6       True          5  
+ 7       True          4  
+ 8       True          3  }</code></pre>
+</div>
+</div>
+<section id="create-predictions-from-test-dataset" class="cell markdown"
+id="9vnTQw0M1AJI">
+<h3>Create predictions from test dataset</h3>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="TrAwmCMO1AJI" data-outputId="c9808244-2738-4877-e5f0-8b7c50b03fce">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>predictions <span class="op">=</span> predictor.predict(test)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>predictions.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="24">
+<pre><code>0    39.907597
+1    48.709770
+2    53.661095
+3    57.252678
+4    59.022495
+Name: count, dtype: float32</code></pre>
+</div>
+</div>
+<section
+id="note-kaggle-will-reject-the-submission-if-we-dont-set-everything-to-be--0"
+class="cell markdown" id="MWlJQuU71AJI">
+<h4>NOTE: Kaggle will reject the submission if we don't set everything
+to be &gt; 0.</h4>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="rgSQ0Y3z1AJI" data-outputId="d163a83f-3b7c-4775-e352-6702d915e737">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Describe the `predictions` series to see if there are any negative values</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>predictions.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+<pre><code>count    6493.000000
+mean      107.847939
+std        98.470993
+min       -17.750637
+25%        18.860073
+50%        66.716599
+75%       187.380188
+max       393.299347
+Name: count, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="5n4uDyNY1AJI" data-outputId="7551571f-e8b5-464a-d3ce-1e5033cb2ecc">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># How many negative values do we have?</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>predictions[predictions<span class="op">&lt;</span><span class="dv">0</span>].<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="26">
+<pre><code>-85.449066</code></pre>
+</div>
+</div>
+<div class="cell code" id="SWnXEqD71AJI">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set them to zero</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>predictions[predictions<span class="op">&lt;</span><span class="dv">0</span>]<span class="op">=</span><span class="dv">0</span></span></code></pre></div>
+</div>
+<section id="set-predictions-to-submission-dataframe-save-and-submit"
+class="cell markdown" id="jYxtcIR21AJI">
+<h3>Set predictions to submission dataframe, save, and submit</h3>
+</section>
+<div class="cell code" id="QIk5GXFj1AJI">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>submission[<span class="st">&quot;count&quot;</span>] <span class="op">=</span> predictions</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>submission.to_csv(<span class="st">&quot;submission.csv&quot;</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="lTJJFONG1AJI" data-outputId="c00e4a4f-340c-4d7b-d1b0-fb11fb3d4be3">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle competitions submit <span class="op">-</span>c bike<span class="op">-</span>sharing<span class="op">-</span>demand <span class="op">-</span>f submission.csv <span class="op">-</span>m <span class="st">&quot;first raw submission&quot;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>100% 188k/188k [00:00&lt;00:00, 430kB/s]
+Successfully submitted to Bike Sharing Demand</code></pre>
+</div>
+</div>
+<section
+id="view-submission-via-the-command-line-or-in-the-web-browser-under-the-competitions-page---my-submissions"
+class="cell markdown" id="zdZGchNt1AJI">
+<h4>View submission via the command line or in the web browser under the
+competition's page - <code>My Submissions</code></h4>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="qQlG6nCP1AJI" data-outputId="e3e5ff56-838c-4917-86a1-f81e54f1cf7c">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle competitions submissions <span class="op">-</span>c bike<span class="op">-</span>sharing<span class="op">-</span>demand <span class="op">|</span> tail <span class="op">-</span>n <span class="op">+</span><span class="dv">1</span> <span class="op">|</span> head <span class="op">-</span>n <span class="dv">6</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>fileName        date                 description           status    publicScore  privateScore  
+--------------  -------------------  --------------------  --------  -----------  ------------  
+submission.csv  2024-05-12 06:46:55  first raw submission  complete  1.89062      1.89062       
+submission.csv  2024-05-11 11:45:51  first raw submission  complete  1.80283      1.80283       
+</code></pre>
+</div>
+</div>
+<section id="initial-score-of-" class="cell markdown" id="YWSZUgGb1AJI">
+<h4>Initial score of <code>?</code></h4>
+</section>
+<section
+id="step-4-exploratory-data-analysis-and-creating-an-additional-feature"
+class="cell markdown" id="p9qq3mSK1AJI">
+<h2>Step 4: Exploratory Data Analysis and Creating an additional
+feature</h2>
+<ul>
+<li>Any additional feature will do, but a great suggestion would be to
+separate out the datetime into hour, day, or month parts.</li>
+</ul>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="hTirV8v-1AJP" data-outputId="5b31247c-6e61-4437-a161-561eb7056916">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a histogram of all features to show the distribution of each one relative to the data. This is part of the exploritory data analysis</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>train.hist(bins<span class="op">=</span><span class="dv">10</span>, figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">20</span>))</span></code></pre></div>
+<div class="output execute_result" data-execution_count="28">
+<pre><code>array([[&lt;Axes: title={&#39;center&#39;: &#39;datetime&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;season&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;holiday&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;workingday&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;weather&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;temp&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;atemp&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;humidity&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;windspeed&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;casual&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;registered&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;count&#39;}&gt;]], dtype=object)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="img/5193eb1d323613c1896811be04203838c99ce8d3.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+id="ofI1tU32G-Vp" data-outputId="334a3a5f-2928-45ae-9e67-981fc1f6a14f">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">16</span>, <span class="dv">6</span>))</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>plt.plot(train[<span class="st">&#39;datetime&#39;</span>], train[<span class="st">&#39;count&#39;</span>], color<span class="op">=</span><span class="st">&#39;b&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;-&#39;</span>, linewidth<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Time Series of Bike Sharing Demand&#39;</span>)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Datetime&#39;</span>)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Count&#39;</span>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">&#39;timeseries.png&#39;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="img/time_series.png" /></p>
+</div>
+</div>
+<div class="cell code" id="h8u37UP3iela">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new feature</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Creating new features including Hour, Day of the week and month</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;Hour&#39;</span>] <span class="op">=</span> train[<span class="st">&#39;datetime&#39;</span>].dt.hour</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;day_of_week&#39;</span>] <span class="op">=</span> train[<span class="st">&#39;datetime&#39;</span>].dt.dayofweek</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;Month&#39;</span>] <span class="op">=</span> train[<span class="st">&#39;datetime&#39;</span>].dt.month</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&#39;Hour&#39;</span>] <span class="op">=</span> test[<span class="st">&#39;datetime&#39;</span>].dt.hour</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&#39;day_of_week&#39;</span>] <span class="op">=</span> test[<span class="st">&#39;datetime&#39;</span>].dt.dayofweek</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&#39;Month&#39;</span>] <span class="op">=</span> test[<span class="st">&#39;datetime&#39;</span>].dt.month</span></code></pre></div>
+</div>
+<section
+id="make-category-types-for-these-so-models-know-they-are-not-just-numbers"
+class="cell markdown" id="hgoU0-Xh1AJP">
+<h2>Make category types for these so models know they are not just
+numbers</h2>
+<ul>
+<li>AutoGluon originally sees these as ints, but in reality they are int
+representations of a category.</li>
+<li>Setting the dtype to category will classify these as categories in
+AutoGluon.</li>
+</ul>
+</section>
+<div class="cell code" id="l8dGRZgz1AJP">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&quot;season&quot;</span>] <span class="op">=</span> train[<span class="st">&quot;season&quot;</span>].astype(<span class="st">&quot;category&quot;</span>)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&quot;weather&quot;</span>] <span class="op">=</span> train[<span class="st">&quot;weather&quot;</span>].astype(<span class="st">&quot;category&quot;</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&quot;season&quot;</span>] <span class="op">=</span> test[<span class="st">&quot;season&quot;</span>].astype(<span class="st">&quot;category&quot;</span>)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&quot;weather&quot;</span>] <span class="op">=</span> test[<span class="st">&quot;weather&quot;</span>].astype(<span class="st">&quot;category&quot;</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="MsNXN2fJ1AJP" data-outputId="033c04ea-d251-4b30-a721-768f0b99cbce">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># View are new feature</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>train.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="31">
+
+  <div id="df-91678c85-17c8-4301-a3e2-4efc0b3d8b89" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>datetime</th>
+      <th>season</th>
+      <th>holiday</th>
+      <th>workingday</th>
+      <th>weather</th>
+      <th>temp</th>
+      <th>atemp</th>
+      <th>humidity</th>
+      <th>windspeed</th>
+      <th>casual</th>
+      <th>registered</th>
+      <th>count</th>
+      <th>Hour</th>
+      <th>day_of_week</th>
+      <th>Month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2011-01-01 00:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.84</td>
+      <td>14.395</td>
+      <td>81</td>
+      <td>0.0</td>
+      <td>3</td>
+      <td>13</td>
+      <td>16</td>
+      <td>0</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2011-01-01 01:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.02</td>
+      <td>13.635</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>8</td>
+      <td>32</td>
+      <td>40</td>
+      <td>1</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2011-01-01 02:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.02</td>
+      <td>13.635</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>5</td>
+      <td>27</td>
+      <td>32</td>
+      <td>2</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2011-01-01 03:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.84</td>
+      <td>14.395</td>
+      <td>75</td>
+      <td>0.0</td>
+      <td>3</td>
+      <td>10</td>
+      <td>13</td>
+      <td>3</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2011-01-01 04:00:00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9.84</td>
+      <td>14.395</td>
+      <td>75</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-91678c85-17c8-4301-a3e2-4efc0b3d8b89')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-91678c85-17c8-4301-a3e2-4efc0b3d8b89 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-91678c85-17c8-4301-a3e2-4efc0b3d8b89');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-2536c90c-d82a-472d-be6d-e3b9ea360290">
+  <button class="colab-df-quickchart" onclick="quickchart('df-2536c90c-d82a-472d-be6d-e3b9ea360290')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-2536c90c-d82a-472d-be6d-e3b9ea360290 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:853}"
+id="Gxw2yRYFxOJA" data-outputId="dcc640da-fbb5-47e1-d13d-7fe43bbe4859">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>numeric_columns <span class="op">=</span> train.drop([<span class="st">&#39;casual&#39;</span>, <span class="st">&#39;registered&#39;</span>], axis <span class="op">=</span> <span class="dv">1</span>).select_dtypes(include<span class="op">=</span>[<span class="st">&#39;int32&#39;</span>, <span class="st">&#39;int64&#39;</span>, <span class="st">&#39;float64&#39;</span>]).columns</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>correlation_matrix <span class="op">=</span> train[numeric_columns].corr()</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">10</span>))</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>sns.heatmap(correlation_matrix, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, fmt<span class="op">=</span><span class="st">&#39;.2f&#39;</span>, linewidths<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Correlation Matrix of Features&#39;</span>)</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">&#39;correlation.png&#39;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="img/corr.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="RQp8k8to1AJP" data-outputId="0dc20f44-b35e-4c7a-bcd1-226942cf10a7">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># View histogram of all features again now with the hour feature</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>train.hist(bins<span class="op">=</span><span class="dv">10</span>, figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">20</span>))</span></code></pre></div>
+<div class="output execute_result" data-execution_count="32">
+<pre><code>array([[&lt;Axes: title={&#39;center&#39;: &#39;datetime&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;holiday&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;workingday&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;temp&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;atemp&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;humidity&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;windspeed&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;casual&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;registered&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;count&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;Hour&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;day_of_week&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;Month&#39;}&gt;, &lt;Axes: &gt;, &lt;Axes: &gt;, &lt;Axes: &gt;]],
+      dtype=object)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="img/9d329fb63cd7728d94f73267ee5aaa5e6c74bd0e.png" /></p>
+</div>
+</div>
+<section
+id="step-5-rerun-the-model-with-the-same-settings-as-before-just-with-more-features"
+class="cell markdown" id="tljjnTAs1AJQ">
+<h2>Step 5: Rerun the model with the same settings as before, just with
+more features</h2>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="WBLZ6pZ01AJQ" data-outputId="db4658ec-470c-4824-b177-6dceedf4cba7">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>predictor_new_features <span class="op">=</span> TabularPredictor(label <span class="op">=</span> <span class="st">&quot;count&quot;</span>, eval_metric<span class="op">=</span><span class="st">&#39;root_mean_squared_error&#39;</span>).fit(train_data<span class="op">=</span>train.drop([<span class="st">&#39;casual&#39;</span>, <span class="st">&#39;registered&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>    time_limit<span class="op">=</span><span class="dv">600</span>,</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    presets<span class="op">=</span><span class="st">&quot;best_quality&quot;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>No path specified. Models will be saved in: &quot;AutogluonModels/ag-20240512_065222&quot;
+Presets specified: [&#39;best_quality&#39;]
+Setting dynamic_stacking from &#39;auto&#39; to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Dynamic stacking is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Detecting stacked overfitting by sub-fitting AutoGluon on the input data. That is, copies of AutoGluon will be sub-fit on subset(s) of the data. Then, the holdout validation data is used to detect stacked overfitting.
+Sub-fit(s) time limit is: 600 seconds.
+Starting holdout-based sub-fit for dynamic stacking. Context path is: AutogluonModels/ag-20240512_065222/ds_sub_fit/sub_fit_ho.
+Running the sub-fit in a ray process to avoid memory leakage.
+Spend 164 seconds for the sub-fit(s) during dynamic stacking.
+Time left for full fit of AutoGluon: 436 seconds.
+Starting full fit now with num_stack_levels 1.
+Beginning AutoGluon training ... Time limit = 436s
+AutoGluon will save models to &quot;AutogluonModels/ag-20240512_065222&quot;
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.12
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Sat Nov 18 15:31:17 UTC 2023
+CPU Count:          2
+Memory Avail:       9.94 GB / 12.67 GB (78.4%)
+Disk Space Avail:   74.58 GB / 107.72 GB (69.2%)
+===================================================
+Train Data Rows:    10886
+Train Data Columns: 12
+Label Column:       count
+Problem Type:       regression
+Preprocessing data ...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    10178.34 MB
+	Train Data (Original)  Memory Usage: 0.73 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 2 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+		Fitting CategoryFeatureGenerator...
+			Fitting CategoryMemoryMinimizeFeatureGenerator...
+		Fitting DatetimeFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		(&#39;category&#39;, []) : 2 | [&#39;season&#39;, &#39;weather&#39;]
+		(&#39;datetime&#39;, []) : 1 | [&#39;datetime&#39;]
+		(&#39;float&#39;, [])    : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+		(&#39;int&#39;, [])      : 6 | [&#39;holiday&#39;, &#39;workingday&#39;, &#39;humidity&#39;, &#39;Hour&#39;, &#39;day_of_week&#39;, ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		(&#39;category&#39;, [])             : 2 | [&#39;season&#39;, &#39;weather&#39;]
+		(&#39;float&#39;, [])                : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+		(&#39;int&#39;, [])                  : 4 | [&#39;humidity&#39;, &#39;Hour&#39;, &#39;day_of_week&#39;, &#39;Month&#39;]
+		(&#39;int&#39;, [&#39;bool&#39;])            : 2 | [&#39;holiday&#39;, &#39;workingday&#39;]
+		(&#39;int&#39;, [&#39;datetime_as_int&#39;]) : 3 | [&#39;datetime&#39;, &#39;datetime.year&#39;, &#39;datetime.day&#39;]
+	1.7s = Fit runtime
+	12 features in original data used to generate 14 features in processed data.
+	Train Data (Processed) Memory Usage: 0.75 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 1.78s ...
+AutoGluon will gauge predictive performance using evaluation metric: &#39;root_mean_squared_error&#39;
+	This metric&#39;s sign has been flipped to adhere to being higher_is_better. The metric score can be multiplied by -1 to get the metric value.
+	To change this, specify the eval_metric parameter of Predictor()
+Large model count detected (112 configs) ... Only displaying the first 3 models of each family. To see all, set `verbosity=3`.
+User-specified model hyperparameters to be fit:
+{
+	&#39;NN_TORCH&#39;: [{}, {&#39;activation&#39;: &#39;elu&#39;, &#39;dropout_prob&#39;: 0.10077639529843717, &#39;hidden_size&#39;: 108, &#39;learning_rate&#39;: 0.002735937344002146, &#39;num_layers&#39;: 4, &#39;use_batchnorm&#39;: True, &#39;weight_decay&#39;: 1.356433327634438e-12, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r79&#39;, &#39;priority&#39;: -2}}, {&#39;activation&#39;: &#39;elu&#39;, &#39;dropout_prob&#39;: 0.11897478034205347, &#39;hidden_size&#39;: 213, &#39;learning_rate&#39;: 0.0010474382260641949, &#39;num_layers&#39;: 4, &#39;use_batchnorm&#39;: False, &#39;weight_decay&#39;: 5.594471067786272e-10, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r22&#39;, &#39;priority&#39;: -7}}],
+	&#39;GBM&#39;: [{&#39;extra_trees&#39;: True, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;XT&#39;}}, {}, &#39;GBMLarge&#39;],
+	&#39;CAT&#39;: [{}, {&#39;depth&#39;: 6, &#39;grow_policy&#39;: &#39;SymmetricTree&#39;, &#39;l2_leaf_reg&#39;: 2.1542798306067823, &#39;learning_rate&#39;: 0.06864209415792857, &#39;max_ctr_complexity&#39;: 4, &#39;one_hot_max_size&#39;: 10, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r177&#39;, &#39;priority&#39;: -1}}, {&#39;depth&#39;: 8, &#39;grow_policy&#39;: &#39;Depthwise&#39;, &#39;l2_leaf_reg&#39;: 2.7997999596449104, &#39;learning_rate&#39;: 0.031375015734637225, &#39;max_ctr_complexity&#39;: 2, &#39;one_hot_max_size&#39;: 3, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r9&#39;, &#39;priority&#39;: -5}}],
+	&#39;XGB&#39;: [{}, {&#39;colsample_bytree&#39;: 0.6917311125174739, &#39;enable_categorical&#39;: False, &#39;learning_rate&#39;: 0.018063876087523967, &#39;max_depth&#39;: 10, &#39;min_child_weight&#39;: 0.6028633586934382, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r33&#39;, &#39;priority&#39;: -8}}, {&#39;colsample_bytree&#39;: 0.6628423832084077, &#39;enable_categorical&#39;: False, &#39;learning_rate&#39;: 0.08775715546881824, &#39;max_depth&#39;: 5, &#39;min_child_weight&#39;: 0.6294123374222513, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r89&#39;, &#39;priority&#39;: -16}}],
+	&#39;FASTAI&#39;: [{}, {&#39;bs&#39;: 256, &#39;emb_drop&#39;: 0.5411770367537934, &#39;epochs&#39;: 43, &#39;layers&#39;: [800, 400], &#39;lr&#39;: 0.01519848858318159, &#39;ps&#39;: 0.23782946566604385, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r191&#39;, &#39;priority&#39;: -4}}, {&#39;bs&#39;: 2048, &#39;emb_drop&#39;: 0.05070411322605811, &#39;epochs&#39;: 29, &#39;layers&#39;: [200, 100], &#39;lr&#39;: 0.08974235041576624, &#39;ps&#39;: 0.10393466140748028, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;_r102&#39;, &#39;priority&#39;: -11}}],
+	&#39;RF&#39;: [{&#39;criterion&#39;: &#39;gini&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Gini&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;entropy&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Entr&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;squared_error&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;MSE&#39;, &#39;problem_types&#39;: [&#39;regression&#39;, &#39;quantile&#39;]}}],
+	&#39;XT&#39;: [{&#39;criterion&#39;: &#39;gini&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Gini&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;entropy&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Entr&#39;, &#39;problem_types&#39;: [&#39;binary&#39;, &#39;multiclass&#39;]}}, {&#39;criterion&#39;: &#39;squared_error&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;MSE&#39;, &#39;problem_types&#39;: [&#39;regression&#39;, &#39;quantile&#39;]}}],
+	&#39;KNN&#39;: [{&#39;weights&#39;: &#39;uniform&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Unif&#39;}}, {&#39;weights&#39;: &#39;distance&#39;, &#39;ag_args&#39;: {&#39;name_suffix&#39;: &#39;Dist&#39;}}],
+}
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 108 L1 models ...
+Fitting model: KNeighborsUnif_BAG_L1 ... Training model for up to 289.39s of the 434.18s of remaining time.
+	-101.5462	 = Validation score   (-root_mean_squared_error)
+	0.05s	 = Training   runtime
+	0.09s	 = Validation runtime
+Fitting model: KNeighborsDist_BAG_L1 ... Training model for up to 289.19s of the 433.97s of remaining time.
+	-84.1251	 = Validation score   (-root_mean_squared_error)
+	0.07s	 = Training   runtime
+	0.07s	 = Validation runtime
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 289.0s of the 433.78s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.07%)
+	-34.5734	 = Validation score   (-root_mean_squared_error)
+	201.4s	 = Training   runtime
+	36.25s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 77.83s of the 222.62s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.07%)
+	-33.9172	 = Validation score   (-root_mean_squared_error)
+	60.92s	 = Training   runtime
+	3.66s	 = Validation runtime
+Fitting model: RandomForestMSE_BAG_L1 ... Training model for up to 10.53s of the 155.32s of remaining time.
+	-38.4661	 = Validation score   (-root_mean_squared_error)
+	20.34s	 = Training   runtime
+	0.64s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 360.0s of the 132.79s of remaining time.
+	Ensemble Weights: {&#39;LightGBM_BAG_L1&#39;: 0.44, &#39;LightGBMXT_BAG_L1&#39;: 0.36, &#39;RandomForestMSE_BAG_L1&#39;: 0.16, &#39;KNeighborsDist_BAG_L1&#39;: 0.04}
+	-32.3981	 = Validation score   (-root_mean_squared_error)
+	0.03s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitting 106 L2 models ...
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 132.73s of the 132.68s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.09%)
+	-31.3827	 = Validation score   (-root_mean_squared_error)
+	38.66s	 = Training   runtime
+	1.16s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 88.03s of the 87.98s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.09%)
+	-30.7061	 = Validation score   (-root_mean_squared_error)
+	36.99s	 = Training   runtime
+	0.48s	 = Validation runtime
+Fitting model: RandomForestMSE_BAG_L2 ... Training model for up to 45.13s of the 45.08s of remaining time.
+	-31.9769	 = Validation score   (-root_mean_squared_error)
+	66.29s	 = Training   runtime
+	1.04s	 = Validation runtime
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 360.0s of the -24.78s of remaining time.
+	Ensemble Weights: {&#39;LightGBM_BAG_L2&#39;: 0.6, &#39;LightGBMXT_BAG_L2&#39;: 0.28, &#39;RandomForestMSE_BAG_L2&#39;: 0.08, &#39;LightGBMXT_BAG_L1&#39;: 0.04}
+	-30.5076	 = Validation score   (-root_mean_squared_error)
+	0.06s	 = Training   runtime
+	0.0s	 = Validation runtime
+AutoGluon training complete, total runtime = 460.9s ... Best model: &quot;WeightedEnsemble_L3&quot;
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load(&quot;AutogluonModels/ag-20240512_065222&quot;)
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="uCg7v6BS1AJQ" data-outputId="68582c9c-f054-45cc-96df-ff82ba5bd9ea">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>predictor_new_features.fit_summary()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>*** Summary of fit() ***
+Estimated performance of each model:
+                    model   score_val              eval_metric  pred_time_val    fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0     WeightedEnsemble_L3  -30.507576  root_mean_squared_error      43.384015  424.784220                0.002635           0.060906            3       True         10
+1         LightGBM_BAG_L2  -30.706077  root_mean_squared_error      41.188506  319.773611                0.479351          36.988842            2       True          8
+2       LightGBMXT_BAG_L2  -31.382702  root_mean_squared_error      41.865686  321.448751                1.156531          38.663982            2       True          7
+3  RandomForestMSE_BAG_L2  -31.976905  root_mean_squared_error      41.745497  349.070490                1.036342          66.285721            2       True          9
+4     WeightedEnsemble_L2  -32.398138  root_mean_squared_error      40.621663  282.768331                0.001141           0.034065            2       True          6
+5         LightGBM_BAG_L1  -33.917164  root_mean_squared_error       3.663462   60.918315                3.663462          60.918315            1       True          4
+6       LightGBMXT_BAG_L1  -34.573371  root_mean_squared_error      36.250608  201.404287               36.250608         201.404287            1       True          3
+7  RandomForestMSE_BAG_L1  -38.466059  root_mean_squared_error       0.639371   20.340318                0.639371          20.340318            1       True          5
+8   KNeighborsDist_BAG_L1  -84.125061  root_mean_squared_error       0.067080    0.071346                0.067080           0.071346            1       True          2
+9   KNeighborsUnif_BAG_L1 -101.546199  root_mean_squared_error       0.088633    0.050503                0.088633           0.050503            1       True          1
+Number of models trained: 10
+Types of models trained:
+{&#39;StackerEnsembleModel_RF&#39;, &#39;WeightedEnsembleModel&#39;, &#39;StackerEnsembleModel_KNN&#39;, &#39;StackerEnsembleModel_LGB&#39;}
+Bagging used: True  (with 8 folds)
+Multi-layer stack-ensembling used: True  (with 3 levels)
+Feature Metadata (Processed):
+(raw dtype, special dtypes):
+(&#39;category&#39;, [])             : 2 | [&#39;season&#39;, &#39;weather&#39;]
+(&#39;float&#39;, [])                : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+(&#39;int&#39;, [])                  : 4 | [&#39;humidity&#39;, &#39;Hour&#39;, &#39;day_of_week&#39;, &#39;Month&#39;]
+(&#39;int&#39;, [&#39;bool&#39;])            : 2 | [&#39;holiday&#39;, &#39;workingday&#39;]
+(&#39;int&#39;, [&#39;datetime_as_int&#39;]) : 3 | [&#39;datetime&#39;, &#39;datetime.year&#39;, &#39;datetime.day&#39;]
+*** End of fit() summary ***
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.10/dist-packages/autogluon/core/utils/plots.py:169: UserWarning: AutoGluon summary plots cannot be created because bokeh is not installed. To see plots, please do: &quot;pip install bokeh==2.0.1&quot;
+  warnings.warn(&#39;AutoGluon summary plots cannot be created because bokeh is not installed. To see plots, please do: &quot;pip install bokeh==2.0.1&quot;&#39;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="34">
+<pre><code>{&#39;model_types&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: &#39;StackerEnsembleModel_KNN&#39;,
+  &#39;KNeighborsDist_BAG_L1&#39;: &#39;StackerEnsembleModel_KNN&#39;,
+  &#39;LightGBMXT_BAG_L1&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;LightGBM_BAG_L1&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;RandomForestMSE_BAG_L1&#39;: &#39;StackerEnsembleModel_RF&#39;,
+  &#39;WeightedEnsemble_L2&#39;: &#39;WeightedEnsembleModel&#39;,
+  &#39;LightGBMXT_BAG_L2&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;LightGBM_BAG_L2&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;RandomForestMSE_BAG_L2&#39;: &#39;StackerEnsembleModel_RF&#39;,
+  &#39;WeightedEnsemble_L3&#39;: &#39;WeightedEnsembleModel&#39;},
+ &#39;model_performance&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: -101.54619908446061,
+  &#39;KNeighborsDist_BAG_L1&#39;: -84.12506123181602,
+  &#39;LightGBMXT_BAG_L1&#39;: -34.573371020630084,
+  &#39;LightGBM_BAG_L1&#39;: -33.917164270158686,
+  &#39;RandomForestMSE_BAG_L1&#39;: -38.466059476668285,
+  &#39;WeightedEnsemble_L2&#39;: -32.39813816621532,
+  &#39;LightGBMXT_BAG_L2&#39;: -31.38270178196472,
+  &#39;LightGBM_BAG_L2&#39;: -30.706076886545457,
+  &#39;RandomForestMSE_BAG_L2&#39;: -31.976905313847187,
+  &#39;WeightedEnsemble_L3&#39;: -30.507575741740915},
+ &#39;model_best&#39;: &#39;WeightedEnsemble_L3&#39;,
+ &#39;model_paths&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: [&#39;KNeighborsUnif_BAG_L1&#39;],
+  &#39;KNeighborsDist_BAG_L1&#39;: [&#39;KNeighborsDist_BAG_L1&#39;],
+  &#39;LightGBMXT_BAG_L1&#39;: [&#39;LightGBMXT_BAG_L1&#39;],
+  &#39;LightGBM_BAG_L1&#39;: [&#39;LightGBM_BAG_L1&#39;],
+  &#39;RandomForestMSE_BAG_L1&#39;: [&#39;RandomForestMSE_BAG_L1&#39;],
+  &#39;WeightedEnsemble_L2&#39;: [&#39;WeightedEnsemble_L2&#39;],
+  &#39;LightGBMXT_BAG_L2&#39;: [&#39;LightGBMXT_BAG_L2&#39;],
+  &#39;LightGBM_BAG_L2&#39;: [&#39;LightGBM_BAG_L2&#39;],
+  &#39;RandomForestMSE_BAG_L2&#39;: [&#39;RandomForestMSE_BAG_L2&#39;],
+  &#39;WeightedEnsemble_L3&#39;: [&#39;WeightedEnsemble_L3&#39;]},
+ &#39;model_fit_times&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: 0.05050301551818848,
+  &#39;KNeighborsDist_BAG_L1&#39;: 0.07134628295898438,
+  &#39;LightGBMXT_BAG_L1&#39;: 201.40428686141968,
+  &#39;LightGBM_BAG_L1&#39;: 60.918314933776855,
+  &#39;RandomForestMSE_BAG_L1&#39;: 20.340317964553833,
+  &#39;WeightedEnsemble_L2&#39;: 0.03406524658203125,
+  &#39;LightGBMXT_BAG_L2&#39;: 38.66398239135742,
+  &#39;LightGBM_BAG_L2&#39;: 36.98884201049805,
+  &#39;RandomForestMSE_BAG_L2&#39;: 66.28572082519531,
+  &#39;WeightedEnsemble_L3&#39;: 0.060906171798706055},
+ &#39;model_pred_times&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: 0.08863306045532227,
+  &#39;KNeighborsDist_BAG_L1&#39;: 0.06708049774169922,
+  &#39;LightGBMXT_BAG_L1&#39;: 36.25060844421387,
+  &#39;LightGBM_BAG_L1&#39;: 3.6634624004364014,
+  &#39;RandomForestMSE_BAG_L1&#39;: 0.6393706798553467,
+  &#39;WeightedEnsemble_L2&#39;: 0.0011410713195800781,
+  &#39;LightGBMXT_BAG_L2&#39;: 1.1565310955047607,
+  &#39;LightGBM_BAG_L2&#39;: 0.4793510437011719,
+  &#39;RandomForestMSE_BAG_L2&#39;: 1.0363423824310303,
+  &#39;WeightedEnsemble_L3&#39;: 0.0026350021362304688},
+ &#39;num_bag_folds&#39;: 8,
+ &#39;max_stack_level&#39;: 3,
+ &#39;model_hyperparams&#39;: {&#39;KNeighborsUnif_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;KNeighborsDist_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;LightGBMXT_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;RandomForestMSE_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;WeightedEnsemble_L2&#39;: {&#39;use_orig_features&#39;: False,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBMXT_BAG_L2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;RandomForestMSE_BAG_L2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;WeightedEnsemble_L3&#39;: {&#39;use_orig_features&#39;: False,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True}},
+ &#39;leaderboard&#39;:                     model   score_val              eval_metric  pred_time_val  \
+ 0     WeightedEnsemble_L3  -30.507576  root_mean_squared_error      43.384015   
+ 1         LightGBM_BAG_L2  -30.706077  root_mean_squared_error      41.188506   
+ 2       LightGBMXT_BAG_L2  -31.382702  root_mean_squared_error      41.865686   
+ 3  RandomForestMSE_BAG_L2  -31.976905  root_mean_squared_error      41.745497   
+ 4     WeightedEnsemble_L2  -32.398138  root_mean_squared_error      40.621663   
+ 5         LightGBM_BAG_L1  -33.917164  root_mean_squared_error       3.663462   
+ 6       LightGBMXT_BAG_L1  -34.573371  root_mean_squared_error      36.250608   
+ 7  RandomForestMSE_BAG_L1  -38.466059  root_mean_squared_error       0.639371   
+ 8   KNeighborsDist_BAG_L1  -84.125061  root_mean_squared_error       0.067080   
+ 9   KNeighborsUnif_BAG_L1 -101.546199  root_mean_squared_error       0.088633   
+ 
+      fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  \
+ 0  424.784220                0.002635           0.060906            3   
+ 1  319.773611                0.479351          36.988842            2   
+ 2  321.448751                1.156531          38.663982            2   
+ 3  349.070490                1.036342          66.285721            2   
+ 4  282.768331                0.001141           0.034065            2   
+ 5   60.918315                3.663462          60.918315            1   
+ 6  201.404287               36.250608         201.404287            1   
+ 7   20.340318                0.639371          20.340318            1   
+ 8    0.071346                0.067080           0.071346            1   
+ 9    0.050503                0.088633           0.050503            1   
+ 
+    can_infer  fit_order  
+ 0       True         10  
+ 1       True          8  
+ 2       True          7  
+ 3       True          9  
+ 4       True          6  
+ 5       True          4  
+ 6       True          3  
+ 7       True          5  
+ 8       True          2  
+ 9       True          1  }</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="vPU4VXC51AJQ" data-outputId="32b4cd85-89e2-44d6-953e-793afda596bb">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remember to set all negative values to zero</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>predictions_new_features <span class="op">=</span> predictor_new_features.predict(test)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>predictions_new_features.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="35">
+<pre><code>0    16.345268
+1    10.834909
+2     9.958771
+3     8.632751
+4     7.736506
+Name: count, dtype: float32</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="O1d6w9Qkn34x" data-outputId="681d2ceb-bf31-4fb6-8572-77633509d2bf">
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>predictions_new_features.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="36">
+<pre><code>count    6493.000000
+mean      165.143387
+std       146.383636
+min         1.940724
+25%        49.450825
+50%       129.528885
+75%       237.495682
+max       812.105103
+Name: count, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Mj9-XpaEjH7U" data-outputId="5f951989-d190-43c4-80e0-31be06c4c04f">
+<div class="sourceCode" id="cb50"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>predictions_new_features[predictions_new_features<span class="op">&lt;</span><span class="dv">0</span>].<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="37">
+<pre><code>0.0</code></pre>
+</div>
+</div>
+<div class="cell code" id="cH2a_59HjO54">
+<div class="sourceCode" id="cb52"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>predictions_new_features[predictions_new_features<span class="op">&lt;</span><span class="dv">0</span>] <span class="op">=</span> <span class="dv">0</span></span></code></pre></div>
+</div>
+<div class="cell code" id="wrwBoakr1AJQ">
+<div class="sourceCode" id="cb53"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Same submitting predictions</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>submission_new_features <span class="op">=</span> pd.read_csv(<span class="st">&quot;sampleSubmission.csv&quot;</span>, parse_dates<span class="op">=</span>[<span class="st">&quot;datetime&quot;</span>])</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>submission_new_features[<span class="st">&quot;count&quot;</span>] <span class="op">=</span> predictions_new_features</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>submission_new_features.to_csv(<span class="st">&quot;submission_new_features.csv&quot;</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="nl_JeYfD1AJQ" data-outputId="05d156f4-e976-4f84-e321-52b7b211a812">
+<div class="sourceCode" id="cb54"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle competitions submit <span class="op">-</span>c bike<span class="op">-</span>sharing<span class="op">-</span>demand <span class="op">-</span>f submission_new_features.csv <span class="op">-</span>m <span class="st">&quot;new features&quot;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>100% 188k/188k [00:00&lt;00:00, 457kB/s]
+Successfully submitted to Bike Sharing Demand</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="JxoqfUct1AJQ" data-outputId="73df0ff9-40c0-40d0-8899-1e5a38fbf48d">
+<div class="sourceCode" id="cb56"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle competitions submissions <span class="op">-</span>c bike<span class="op">-</span>sharing<span class="op">-</span>demand <span class="op">|</span> tail <span class="op">-</span>n <span class="op">+</span><span class="dv">1</span> <span class="op">|</span> head <span class="op">-</span>n <span class="dv">6</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>fileName                     date                 description           status    publicScore  privateScore  
+---------------------------  -------------------  --------------------  --------  -----------  ------------  
+submission_new_features.csv  2024-05-12 07:06:32  new features          complete  0.61801      0.61801       
+submission.csv               2024-05-12 06:46:55  first raw submission  complete  1.89062      1.89062       
+submission.csv               2024-05-11 11:45:51  first raw submission  complete  1.80283      1.80283       
+</code></pre>
+</div>
+</div>
+<section id="new-score-of-" class="cell markdown" id="tSy71ZNN1AJQ">
+<h4>New Score of <code>?</code></h4>
+</section>
+<section id="step-6-hyper-parameter-optimization" class="cell markdown"
+id="m_VzdIt81AJQ">
+<h2>Step 6: Hyper parameter optimization</h2>
+<ul>
+<li>There are many options for hyper parameter optimization.</li>
+<li>Options are to change the AutoGluon higher level parameters or the
+individual model hyperparameters.</li>
+<li>The hyperparameters of the models themselves that are in AutoGluon.
+Those need the <code>hyperparameter</code> and
+<code>hyperparameter_tune_kwargs</code> arguments.</li>
+</ul>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000,&quot;referenced_widgets&quot;:[&quot;96f9b52a793448d292de2d4d6abdd959&quot;,&quot;7aaf74c57bb14c72a1233d4af93b130f&quot;,&quot;97eaba94ffe44e3395e6c9db677fdb36&quot;,&quot;ab1be05769424d75968f870f8fa7a6cb&quot;,&quot;f2e064dd2f7045368a5eb71ac10c188a&quot;,&quot;424545c399874879a37a7760fa802bc4&quot;,&quot;eb8ed0a3fce14ec58924bb78d3ef864d&quot;,&quot;f1c10f1821584df28139c02a14aa5924&quot;,&quot;22d493f3756e4dc9b847784708c7cf8f&quot;,&quot;f131425fcc3a4286981ccd2769ec8c37&quot;,&quot;8ab58f9665fe4c67a761c208f5af8aa1&quot;,&quot;8aff1aad8208452d99dbbf4b342bacbc&quot;,&quot;50a6d86cba9d46f0acb08ba4d816af25&quot;,&quot;e0800e0c3e4a4ff196e2a54fb6778ba6&quot;,&quot;2752740af5ea432e81e2344167cf119a&quot;,&quot;a40a47ee2f244bb6855b1c237f7f06d4&quot;,&quot;c1e2b5a19f1b40248549f6ef69e6a48c&quot;,&quot;0bc9582d01604a03981d0034f9652279&quot;,&quot;58804ed94d3c428da95873177bfc3c71&quot;,&quot;18e6baeeee554b908e226ecc5405dafa&quot;,&quot;2a2ad7bb042f4070a4d1b7203ecd0951&quot;,&quot;733d976f25d04945a8fb2d84d8c6d949&quot;,&quot;ce2e5d7c9ec14ac2bbeedb403d658077&quot;,&quot;50f5cf9ffa994412a3ba8c618659be3a&quot;,&quot;f928ae633e244f52b2285f64339657be&quot;,&quot;8819b447ad6c4863a39776dfba09e3cd&quot;,&quot;64110921d0fb47a393441cb689a11cf8&quot;,&quot;b15e22c4a2d3473ba081c3da00d272b8&quot;,&quot;2fcaa98770464ce6a8dac30d845e2ae0&quot;,&quot;f176391d0617448a93858b01b7813f95&quot;,&quot;f7332012857e4650804c16a0c0cc0310&quot;,&quot;6fcad5817aab45cc9f48011d93d1f31f&quot;,&quot;fe5e2c89679b4203bce75e733cc78aec&quot;,&quot;267cb05cfe2b472291b201614bc5014f&quot;,&quot;dbd4afc58e914c2885578cf6693d4852&quot;,&quot;ae9d314cbdf94c7db8900ae4b8366fa2&quot;,&quot;d427e6701eaf4772a58aa07bdcccb9c0&quot;,&quot;b8209c8f7cb14b05a9a37cccaed73ced&quot;,&quot;c0dd002316424654a6a22d3ec335b62d&quot;,&quot;dae04ef48d9c42d5a1a8b545c2ba894b&quot;,&quot;eac54db8441d420086e8b7bf9bfd3fa8&quot;,&quot;57c124cb3ba3471395a9c6424e26ff66&quot;,&quot;1fba2101522c43d59d229b92b3d262fe&quot;,&quot;25b18dbd1350473db64dfaf90da38de1&quot;]}"
+id="c2N0hi8zl4zY" data-outputId="2fdd178a-f760-4750-a8cd-4d2a70d42a6f">
+<div class="sourceCode" id="cb58"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>hyperparameters <span class="op">=</span> {</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;GBM&#39;</span>: {<span class="st">&#39;num_boost_round&#39;</span>: <span class="dv">100</span>},</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;RF&#39;</span>: {<span class="st">&#39;n_estimators&#39;</span>: <span class="dv">100</span>},</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XGB&#39;</span>: {<span class="st">&#39;n_estimators&#39;</span>: <span class="dv">100</span>}</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>hyperparameter_tune_kwargs <span class="op">=</span> {</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;num_trials&#39;</span>: <span class="dv">30</span>,</span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;search_strategy&#39;</span>: <span class="st">&#39;random&#39;</span>,</span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;scheduler&#39;</span>: <span class="st">&#39;local&#39;</span>,</span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;searcher&#39;</span>: <span class="st">&#39;random&#39;</span></span>
+<span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-13"><a href="#cb58-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-14"><a href="#cb58-14" aria-hidden="true" tabindex="-1"></a>predictor_new_hpo <span class="op">=</span> TabularPredictor(label <span class="op">=</span> <span class="st">&quot;count&quot;</span>, eval_metric<span class="op">=</span><span class="st">&#39;root_mean_squared_error&#39;</span>).fit(train_data<span class="op">=</span>train.drop([<span class="st">&#39;casual&#39;</span>, <span class="st">&#39;registered&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb58-15"><a href="#cb58-15" aria-hidden="true" tabindex="-1"></a>    hyperparameters<span class="op">=</span>hyperparameters,</span>
+<span id="cb58-16"><a href="#cb58-16" aria-hidden="true" tabindex="-1"></a>    hyperparameter_tune_kwargs<span class="op">=</span>hyperparameter_tune_kwargs,</span>
+<span id="cb58-17"><a href="#cb58-17" aria-hidden="true" tabindex="-1"></a>    time_limit<span class="op">=</span><span class="dv">800</span>,</span>
+<span id="cb58-18"><a href="#cb58-18" aria-hidden="true" tabindex="-1"></a>    presets<span class="op">=</span><span class="st">&quot;best_quality&quot;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>No path specified. Models will be saved in: &quot;AutogluonModels/ag-20240512_071229&quot;
+Presets specified: [&#39;best_quality&#39;]
+Warning: hyperparameter tuning is currently experimental and may cause the process to hang.
+Setting dynamic_stacking from &#39;auto&#39; to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Dynamic stacking is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Detecting stacked overfitting by sub-fitting AutoGluon on the input data. That is, copies of AutoGluon will be sub-fit on subset(s) of the data. Then, the holdout validation data is used to detect stacked overfitting.
+Sub-fit(s) time limit is: 800 seconds.
+Starting holdout-based sub-fit for dynamic stacking. Context path is: AutogluonModels/ag-20240512_071229/ds_sub_fit/sub_fit_ho.
+Running the sub-fit in a ray process to avoid memory leakage.
+Spend 234 seconds for the sub-fit(s) during dynamic stacking.
+Time left for full fit of AutoGluon: 566 seconds.
+Starting full fit now with num_stack_levels 1.
+Beginning AutoGluon training ... Time limit = 566s
+AutoGluon will save models to &quot;AutogluonModels/ag-20240512_071229&quot;
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.12
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Sat Nov 18 15:31:17 UTC 2023
+CPU Count:          2
+Memory Avail:       9.86 GB / 12.67 GB (77.8%)
+Disk Space Avail:   73.86 GB / 107.72 GB (68.6%)
+===================================================
+Train Data Rows:    10886
+Train Data Columns: 12
+Label Column:       count
+Problem Type:       regression
+Preprocessing data ...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    10097.78 MB
+	Train Data (Original)  Memory Usage: 0.73 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 2 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+		Fitting CategoryFeatureGenerator...
+			Fitting CategoryMemoryMinimizeFeatureGenerator...
+		Fitting DatetimeFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		(&#39;category&#39;, []) : 2 | [&#39;season&#39;, &#39;weather&#39;]
+		(&#39;datetime&#39;, []) : 1 | [&#39;datetime&#39;]
+		(&#39;float&#39;, [])    : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+		(&#39;int&#39;, [])      : 6 | [&#39;holiday&#39;, &#39;workingday&#39;, &#39;humidity&#39;, &#39;Hour&#39;, &#39;day_of_week&#39;, ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		(&#39;category&#39;, [])             : 2 | [&#39;season&#39;, &#39;weather&#39;]
+		(&#39;float&#39;, [])                : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+		(&#39;int&#39;, [])                  : 4 | [&#39;humidity&#39;, &#39;Hour&#39;, &#39;day_of_week&#39;, &#39;Month&#39;]
+		(&#39;int&#39;, [&#39;bool&#39;])            : 2 | [&#39;holiday&#39;, &#39;workingday&#39;]
+		(&#39;int&#39;, [&#39;datetime_as_int&#39;]) : 3 | [&#39;datetime&#39;, &#39;datetime.year&#39;, &#39;datetime.day&#39;]
+	1.2s = Fit runtime
+	12 features in original data used to generate 14 features in processed data.
+	Train Data (Processed) Memory Usage: 0.75 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 1.24s ...
+AutoGluon will gauge predictive performance using evaluation metric: &#39;root_mean_squared_error&#39;
+	This metric&#39;s sign has been flipped to adhere to being higher_is_better. The metric score can be multiplied by -1 to get the metric value.
+	To change this, specify the eval_metric parameter of Predictor()
+User-specified model hyperparameters to be fit:
+{
+	&#39;GBM&#39;: {&#39;num_boost_round&#39;: 100},
+	&#39;RF&#39;: {&#39;n_estimators&#39;: 100},
+	&#39;XGB&#39;: {&#39;n_estimators&#39;: 100},
+}
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 3 L1 models ...
+Hyperparameter tuning model: LightGBM_BAG_L1 ... Tuning model for up to 112.92s of the 564.75s of remaining time.
+</code></pre>
+</div>
+<div class="output display_data">
+<div class="sourceCode" id="cb60"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;model_id&quot;</span><span class="fu">:</span><span class="st">&quot;96f9b52a793448d292de2d4d6abdd959&quot;</span><span class="fu">,</span><span class="dt">&quot;version_major&quot;</span><span class="fu">:</span><span class="dv">2</span><span class="fu">,</span><span class="dt">&quot;version_minor&quot;</span><span class="fu">:</span><span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+</div>
+<div class="output stream stderr">
+<pre><code>	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.07%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.11%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.09%)
+	Stopping HPO to satisfy time limit...
+Fitted model: LightGBM_BAG_L1/T1 ...
+	-41.3254	 = Validation score   (-root_mean_squared_error)
+	32.89s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: LightGBM_BAG_L1/T2 ...
+	-35.8409	 = Validation score   (-root_mean_squared_error)
+	32.63s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: LightGBM_BAG_L1/T3 ...
+	-38.7559	 = Validation score   (-root_mean_squared_error)
+	31.63s	 = Training   runtime
+	0.0s	 = Validation runtime
+Hyperparameter tuning model: RandomForest_BAG_L1 ... Tuning model for up to 112.92s of the 467.42s of remaining time.
+	No hyperparameter search space specified for RandomForest_BAG_L1. Skipping HPO. Will train one model based on the provided hyperparameters.
+Fitted model: RandomForest_BAG_L1 ...
+	-39.0283	 = Validation score   (-root_mean_squared_error)
+	8.96s	 = Training   runtime
+	0.0s	 = Validation runtime
+Hyperparameter tuning model: XGBoost_BAG_L1 ... Tuning model for up to 112.92s of the 458.4s of remaining time.
+</code></pre>
+</div>
+<div class="output display_data">
+<div class="sourceCode" id="cb62"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;model_id&quot;</span><span class="fu">:</span><span class="st">&quot;8aff1aad8208452d99dbbf4b342bacbc&quot;</span><span class="fu">,</span><span class="dt">&quot;version_major&quot;</span><span class="fu">:</span><span class="dv">2</span><span class="fu">,</span><span class="dt">&quot;version_minor&quot;</span><span class="fu">:</span><span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+</div>
+<div class="output stream stderr">
+<pre><code>	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.11%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.11%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.26%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.11%)
+	Stopping HPO to satisfy time limit...
+Fitted model: XGBoost_BAG_L1/T1 ...
+	-38.0306	 = Validation score   (-root_mean_squared_error)
+	24.52s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: XGBoost_BAG_L1/T2 ...
+	-41.6171	 = Validation score   (-root_mean_squared_error)
+	27.03s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: XGBoost_BAG_L1/T3 ...
+	-53.1831	 = Validation score   (-root_mean_squared_error)
+	28.84s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: XGBoost_BAG_L1/T4 ...
+	-59.926	 = Validation score   (-root_mean_squared_error)
+	22.39s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 360.0s of the 355.38s of remaining time.
+	Ensemble Weights: {&#39;LightGBM_BAG_L1/T2&#39;: 0.542, &#39;XGBoost_BAG_L1/T1&#39;: 0.25, &#39;RandomForest_BAG_L1&#39;: 0.208}
+	-35.1209	 = Validation score   (-root_mean_squared_error)
+	0.05s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitting 3 L2 models ...
+Hyperparameter tuning model: LightGBM_BAG_L2 ... Tuning model for up to 106.58s of the 355.26s of remaining time.
+</code></pre>
+</div>
+<div class="output display_data">
+<div class="sourceCode" id="cb64"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;model_id&quot;</span><span class="fu">:</span><span class="st">&quot;ce2e5d7c9ec14ac2bbeedb403d658077&quot;</span><span class="fu">,</span><span class="dt">&quot;version_major&quot;</span><span class="fu">:</span><span class="dv">2</span><span class="fu">,</span><span class="dt">&quot;version_minor&quot;</span><span class="fu">:</span><span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+</div>
+<div class="output stream stderr">
+<pre><code>	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.11%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.17%)
+	Stopping HPO to satisfy time limit...
+Fitted model: LightGBM_BAG_L2/T1 ...
+	-35.0969	 = Validation score   (-root_mean_squared_error)
+	35.14s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: LightGBM_BAG_L2/T2 ...
+	-35.7018	 = Validation score   (-root_mean_squared_error)
+	38.38s	 = Training   runtime
+	0.0s	 = Validation runtime
+Hyperparameter tuning model: RandomForest_BAG_L2 ... Tuning model for up to 106.58s of the 281.53s of remaining time.
+	No hyperparameter search space specified for RandomForest_BAG_L2. Skipping HPO. Will train one model based on the provided hyperparameters.
+Fitted model: RandomForest_BAG_L2 ...
+	-35.4632	 = Validation score   (-root_mean_squared_error)
+	21.29s	 = Training   runtime
+	0.0s	 = Validation runtime
+Hyperparameter tuning model: XGBoost_BAG_L2 ... Tuning model for up to 106.58s of the 260.18s of remaining time.
+</code></pre>
+</div>
+<div class="output display_data">
+<div class="sourceCode" id="cb66"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;model_id&quot;</span><span class="fu">:</span><span class="st">&quot;267cb05cfe2b472291b201614bc5014f&quot;</span><span class="fu">,</span><span class="dt">&quot;version_major&quot;</span><span class="fu">:</span><span class="dv">2</span><span class="fu">,</span><span class="dt">&quot;version_minor&quot;</span><span class="fu">:</span><span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+</div>
+<div class="output stream stderr">
+<pre><code>	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.16%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.17%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (2 workers, per: cpus=1, gpus=0, memory=0.40%)
+	Stopping HPO to satisfy time limit...
+Fitted model: XGBoost_BAG_L2/T1 ...
+	-35.3315	 = Validation score   (-root_mean_squared_error)
+	27.01s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: XGBoost_BAG_L2/T2 ...
+	-35.3261	 = Validation score   (-root_mean_squared_error)
+	29.04s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitted model: XGBoost_BAG_L2/T3 ...
+	-38.9654	 = Validation score   (-root_mean_squared_error)
+	29.31s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 360.0s of the 174.58s of remaining time.
+	Ensemble Weights: {&#39;RandomForest_BAG_L2&#39;: 0.312, &#39;LightGBM_BAG_L1/T2&#39;: 0.188, &#39;XGBoost_BAG_L2/T1&#39;: 0.188, &#39;XGBoost_BAG_L1/T1&#39;: 0.125, &#39;LightGBM_BAG_L2/T1&#39;: 0.125, &#39;RandomForest_BAG_L1&#39;: 0.062}
+	-34.5785	 = Validation score   (-root_mean_squared_error)
+	0.14s	 = Training   runtime
+	0.0s	 = Validation runtime
+AutoGluon training complete, total runtime = 391.63s ... Best model: &quot;WeightedEnsemble_L3&quot;
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load(&quot;AutogluonModels/ag-20240512_071229&quot;)
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="NPjmFS_t1AJQ" data-outputId="bb92465a-01eb-4933-e31e-e3c6294c6592">
+<div class="sourceCode" id="cb68"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>predictor_new_hpo.fit_summary()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>*** Summary of fit() ***
+Estimated performance of each model:
+                  model  score_val              eval_metric  pred_time_val    fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0   WeightedEnsemble_L3 -34.578475  root_mean_squared_error       0.003447  292.469799                0.001325           0.138250            3       True         16
+1    LightGBM_BAG_L2/T1 -35.096863  root_mean_squared_error       0.001674  244.032385                0.000158          35.142984            2       True         10
+2   WeightedEnsemble_L2 -35.120926  root_mean_squared_error       0.002041   66.151362                0.001453           0.046611            2       True          9
+3     XGBoost_BAG_L2/T2 -35.326138  root_mean_squared_error       0.001682  237.931182                0.000165          29.041780            2       True         14
+4     XGBoost_BAG_L2/T1 -35.331504  root_mean_squared_error       0.001688  235.895461                0.000172          27.006059            2       True         13
+5   RandomForest_BAG_L2 -35.463225  root_mean_squared_error       0.001792  230.182507                0.000276          21.293105            2       True         12
+6    LightGBM_BAG_L2/T2 -35.701830  root_mean_squared_error       0.001683  247.269523                0.000167          38.380122            2       True         11
+7    LightGBM_BAG_L1/T2 -35.840937  root_mean_squared_error       0.000161   32.630356                0.000161          32.630356            1       True          2
+8     XGBoost_BAG_L1/T1 -38.030626  root_mean_squared_error       0.000165   24.518932                0.000165          24.518932            1       True          5
+9    LightGBM_BAG_L1/T3 -38.755876  root_mean_squared_error       0.000178   31.631163                0.000178          31.631163            1       True          3
+10    XGBoost_BAG_L2/T3 -38.965440  root_mean_squared_error       0.001683  238.199796                0.000166          29.310394            2       True         15
+11  RandomForest_BAG_L1 -39.028282  root_mean_squared_error       0.000262    8.955463                0.000262           8.955463            1       True          4
+12   LightGBM_BAG_L1/T1 -41.325391  root_mean_squared_error       0.000170   32.894388                0.000170          32.894388            1       True          1
+13    XGBoost_BAG_L1/T2 -41.617128  root_mean_squared_error       0.000172   27.031567                0.000172          27.031567            1       True          6
+14    XGBoost_BAG_L1/T3 -53.183148  root_mean_squared_error       0.000224   28.837031                0.000224          28.837031            1       True          7
+15    XGBoost_BAG_L1/T4 -59.926010  root_mean_squared_error       0.000183   22.390501                0.000183          22.390501            1       True          8
+Number of models trained: 16
+Types of models trained:
+{&#39;StackerEnsembleModel_RF&#39;, &#39;WeightedEnsembleModel&#39;, &#39;StackerEnsembleModel_XGBoost&#39;, &#39;StackerEnsembleModel_LGB&#39;}
+Bagging used: True  (with 8 folds)
+Multi-layer stack-ensembling used: True  (with 3 levels)
+Feature Metadata (Processed):
+(raw dtype, special dtypes):
+(&#39;category&#39;, [])             : 2 | [&#39;season&#39;, &#39;weather&#39;]
+(&#39;float&#39;, [])                : 3 | [&#39;temp&#39;, &#39;atemp&#39;, &#39;windspeed&#39;]
+(&#39;int&#39;, [])                  : 4 | [&#39;humidity&#39;, &#39;Hour&#39;, &#39;day_of_week&#39;, &#39;Month&#39;]
+(&#39;int&#39;, [&#39;bool&#39;])            : 2 | [&#39;holiday&#39;, &#39;workingday&#39;]
+(&#39;int&#39;, [&#39;datetime_as_int&#39;]) : 3 | [&#39;datetime&#39;, &#39;datetime.year&#39;, &#39;datetime.day&#39;]
+*** End of fit() summary ***
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.10/dist-packages/autogluon/core/utils/plots.py:169: UserWarning: AutoGluon summary plots cannot be created because bokeh is not installed. To see plots, please do: &quot;pip install bokeh==2.0.1&quot;
+  warnings.warn(&#39;AutoGluon summary plots cannot be created because bokeh is not installed. To see plots, please do: &quot;pip install bokeh==2.0.1&quot;&#39;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="51">
+<pre><code>{&#39;model_types&#39;: {&#39;LightGBM_BAG_L1/T1&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;LightGBM_BAG_L1/T2&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;LightGBM_BAG_L1/T3&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;RandomForest_BAG_L1&#39;: &#39;StackerEnsembleModel_RF&#39;,
+  &#39;XGBoost_BAG_L1/T1&#39;: &#39;StackerEnsembleModel_XGBoost&#39;,
+  &#39;XGBoost_BAG_L1/T2&#39;: &#39;StackerEnsembleModel_XGBoost&#39;,
+  &#39;XGBoost_BAG_L1/T3&#39;: &#39;StackerEnsembleModel_XGBoost&#39;,
+  &#39;XGBoost_BAG_L1/T4&#39;: &#39;StackerEnsembleModel_XGBoost&#39;,
+  &#39;WeightedEnsemble_L2&#39;: &#39;WeightedEnsembleModel&#39;,
+  &#39;LightGBM_BAG_L2/T1&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;LightGBM_BAG_L2/T2&#39;: &#39;StackerEnsembleModel_LGB&#39;,
+  &#39;RandomForest_BAG_L2&#39;: &#39;StackerEnsembleModel_RF&#39;,
+  &#39;XGBoost_BAG_L2/T1&#39;: &#39;StackerEnsembleModel_XGBoost&#39;,
+  &#39;XGBoost_BAG_L2/T2&#39;: &#39;StackerEnsembleModel_XGBoost&#39;,
+  &#39;XGBoost_BAG_L2/T3&#39;: &#39;StackerEnsembleModel_XGBoost&#39;,
+  &#39;WeightedEnsemble_L3&#39;: &#39;WeightedEnsembleModel&#39;},
+ &#39;model_performance&#39;: {&#39;LightGBM_BAG_L1/T1&#39;: -41.32539093341285,
+  &#39;LightGBM_BAG_L1/T2&#39;: -35.8409373056248,
+  &#39;LightGBM_BAG_L1/T3&#39;: -38.75587560057059,
+  &#39;RandomForest_BAG_L1&#39;: -39.02828235955917,
+  &#39;XGBoost_BAG_L1/T1&#39;: -38.0306255512313,
+  &#39;XGBoost_BAG_L1/T2&#39;: -41.61712755057661,
+  &#39;XGBoost_BAG_L1/T3&#39;: -53.183147887418265,
+  &#39;XGBoost_BAG_L1/T4&#39;: -59.92600952192878,
+  &#39;WeightedEnsemble_L2&#39;: -35.1209261755117,
+  &#39;LightGBM_BAG_L2/T1&#39;: -35.09686321121877,
+  &#39;LightGBM_BAG_L2/T2&#39;: -35.701830054663965,
+  &#39;RandomForest_BAG_L2&#39;: -35.463225107954635,
+  &#39;XGBoost_BAG_L2/T1&#39;: -35.33150392600284,
+  &#39;XGBoost_BAG_L2/T2&#39;: -35.32613794615331,
+  &#39;XGBoost_BAG_L2/T3&#39;: -38.965439586927936,
+  &#39;WeightedEnsemble_L3&#39;: -34.57847509324685},
+ &#39;model_best&#39;: &#39;WeightedEnsemble_L3&#39;,
+ &#39;model_paths&#39;: {&#39;LightGBM_BAG_L1/T1&#39;: [&#39;LightGBM_BAG_L1&#39;, &#39;T1&#39;],
+  &#39;LightGBM_BAG_L1/T2&#39;: [&#39;LightGBM_BAG_L1&#39;, &#39;T2&#39;],
+  &#39;LightGBM_BAG_L1/T3&#39;: [&#39;LightGBM_BAG_L1&#39;, &#39;T3&#39;],
+  &#39;RandomForest_BAG_L1&#39;: [&#39;RandomForest_BAG_L1&#39;],
+  &#39;XGBoost_BAG_L1/T1&#39;: [&#39;XGBoost_BAG_L1&#39;, &#39;T1&#39;],
+  &#39;XGBoost_BAG_L1/T2&#39;: [&#39;XGBoost_BAG_L1&#39;, &#39;T2&#39;],
+  &#39;XGBoost_BAG_L1/T3&#39;: [&#39;XGBoost_BAG_L1&#39;, &#39;T3&#39;],
+  &#39;XGBoost_BAG_L1/T4&#39;: [&#39;XGBoost_BAG_L1&#39;, &#39;T4&#39;],
+  &#39;WeightedEnsemble_L2&#39;: [&#39;WeightedEnsemble_L2&#39;],
+  &#39;LightGBM_BAG_L2/T1&#39;: [&#39;LightGBM_BAG_L2&#39;, &#39;T1&#39;],
+  &#39;LightGBM_BAG_L2/T2&#39;: [&#39;LightGBM_BAG_L2&#39;, &#39;T2&#39;],
+  &#39;RandomForest_BAG_L2&#39;: [&#39;RandomForest_BAG_L2&#39;],
+  &#39;XGBoost_BAG_L2/T1&#39;: [&#39;XGBoost_BAG_L2&#39;, &#39;T1&#39;],
+  &#39;XGBoost_BAG_L2/T2&#39;: [&#39;XGBoost_BAG_L2&#39;, &#39;T2&#39;],
+  &#39;XGBoost_BAG_L2/T3&#39;: [&#39;XGBoost_BAG_L2&#39;, &#39;T3&#39;],
+  &#39;WeightedEnsemble_L3&#39;: [&#39;WeightedEnsemble_L3&#39;]},
+ &#39;model_fit_times&#39;: {&#39;LightGBM_BAG_L1/T1&#39;: 32.89438772201538,
+  &#39;LightGBM_BAG_L1/T2&#39;: 32.63035607337952,
+  &#39;LightGBM_BAG_L1/T3&#39;: 31.631163358688354,
+  &#39;RandomForest_BAG_L1&#39;: 8.955463171005249,
+  &#39;XGBoost_BAG_L1/T1&#39;: 24.518932104110718,
+  &#39;XGBoost_BAG_L1/T2&#39;: 27.031566858291626,
+  &#39;XGBoost_BAG_L1/T3&#39;: 28.837031364440918,
+  &#39;XGBoost_BAG_L1/T4&#39;: 22.390501022338867,
+  &#39;WeightedEnsemble_L2&#39;: 0.04661083221435547,
+  &#39;LightGBM_BAG_L2/T1&#39;: 35.14298367500305,
+  &#39;LightGBM_BAG_L2/T2&#39;: 38.38012170791626,
+  &#39;RandomForest_BAG_L2&#39;: 21.293104887008667,
+  &#39;XGBoost_BAG_L2/T1&#39;: 27.006059169769287,
+  &#39;XGBoost_BAG_L2/T2&#39;: 29.041780471801758,
+  &#39;XGBoost_BAG_L2/T3&#39;: 29.310394048690796,
+  &#39;WeightedEnsemble_L3&#39;: 0.13824963569641113},
+ &#39;model_pred_times&#39;: {&#39;LightGBM_BAG_L1/T1&#39;: 0.00016999244689941406,
+  &#39;LightGBM_BAG_L1/T2&#39;: 0.0001609325408935547,
+  &#39;LightGBM_BAG_L1/T3&#39;: 0.00017833709716796875,
+  &#39;RandomForest_BAG_L1&#39;: 0.0002624988555908203,
+  &#39;XGBoost_BAG_L1/T1&#39;: 0.0001647472381591797,
+  &#39;XGBoost_BAG_L1/T2&#39;: 0.00017213821411132812,
+  &#39;XGBoost_BAG_L1/T3&#39;: 0.0002243518829345703,
+  &#39;XGBoost_BAG_L1/T4&#39;: 0.00018334388732910156,
+  &#39;WeightedEnsemble_L2&#39;: 0.0014529228210449219,
+  &#39;LightGBM_BAG_L2/T1&#39;: 0.0001575946807861328,
+  &#39;LightGBM_BAG_L2/T2&#39;: 0.0001666545867919922,
+  &#39;RandomForest_BAG_L2&#39;: 0.0002758502960205078,
+  &#39;XGBoost_BAG_L2/T1&#39;: 0.00017213821411132812,
+  &#39;XGBoost_BAG_L2/T2&#39;: 0.00016546249389648438,
+  &#39;XGBoost_BAG_L2/T3&#39;: 0.00016617774963378906,
+  &#39;WeightedEnsemble_L3&#39;: 0.0013248920440673828},
+ &#39;num_bag_folds&#39;: 8,
+ &#39;max_stack_level&#39;: 3,
+ &#39;model_hyperparams&#39;: {&#39;LightGBM_BAG_L1/T1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L1/T2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L1/T3&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;RandomForest_BAG_L1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;XGBoost_BAG_L1/T1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;XGBoost_BAG_L1/T2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;XGBoost_BAG_L1/T3&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;XGBoost_BAG_L1/T4&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;WeightedEnsemble_L2&#39;: {&#39;use_orig_features&#39;: False,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L2/T1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;LightGBM_BAG_L2/T2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;RandomForest_BAG_L2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True,
+   &#39;use_child_oof&#39;: True},
+  &#39;XGBoost_BAG_L2/T1&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;XGBoost_BAG_L2/T2&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;XGBoost_BAG_L2/T3&#39;: {&#39;use_orig_features&#39;: True,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True},
+  &#39;WeightedEnsemble_L3&#39;: {&#39;use_orig_features&#39;: False,
+   &#39;max_base_models&#39;: 25,
+   &#39;max_base_models_per_type&#39;: 5,
+   &#39;save_bag_folds&#39;: True}},
+ &#39;leaderboard&#39;:                   model  score_val              eval_metric  pred_time_val  \
+ 0   WeightedEnsemble_L3 -34.578475  root_mean_squared_error       0.003447   
+ 1    LightGBM_BAG_L2/T1 -35.096863  root_mean_squared_error       0.001674   
+ 2   WeightedEnsemble_L2 -35.120926  root_mean_squared_error       0.002041   
+ 3     XGBoost_BAG_L2/T2 -35.326138  root_mean_squared_error       0.001682   
+ 4     XGBoost_BAG_L2/T1 -35.331504  root_mean_squared_error       0.001688   
+ 5   RandomForest_BAG_L2 -35.463225  root_mean_squared_error       0.001792   
+ 6    LightGBM_BAG_L2/T2 -35.701830  root_mean_squared_error       0.001683   
+ 7    LightGBM_BAG_L1/T2 -35.840937  root_mean_squared_error       0.000161   
+ 8     XGBoost_BAG_L1/T1 -38.030626  root_mean_squared_error       0.000165   
+ 9    LightGBM_BAG_L1/T3 -38.755876  root_mean_squared_error       0.000178   
+ 10    XGBoost_BAG_L2/T3 -38.965440  root_mean_squared_error       0.001683   
+ 11  RandomForest_BAG_L1 -39.028282  root_mean_squared_error       0.000262   
+ 12   LightGBM_BAG_L1/T1 -41.325391  root_mean_squared_error       0.000170   
+ 13    XGBoost_BAG_L1/T2 -41.617128  root_mean_squared_error       0.000172   
+ 14    XGBoost_BAG_L1/T3 -53.183148  root_mean_squared_error       0.000224   
+ 15    XGBoost_BAG_L1/T4 -59.926010  root_mean_squared_error       0.000183   
+ 
+       fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  \
+ 0   292.469799                0.001325           0.138250            3   
+ 1   244.032385                0.000158          35.142984            2   
+ 2    66.151362                0.001453           0.046611            2   
+ 3   237.931182                0.000165          29.041780            2   
+ 4   235.895461                0.000172          27.006059            2   
+ 5   230.182507                0.000276          21.293105            2   
+ 6   247.269523                0.000167          38.380122            2   
+ 7    32.630356                0.000161          32.630356            1   
+ 8    24.518932                0.000165          24.518932            1   
+ 9    31.631163                0.000178          31.631163            1   
+ 10  238.199796                0.000166          29.310394            2   
+ 11    8.955463                0.000262           8.955463            1   
+ 12   32.894388                0.000170          32.894388            1   
+ 13   27.031567                0.000172          27.031567            1   
+ 14   28.837031                0.000224          28.837031            1   
+ 15   22.390501                0.000183          22.390501            1   
+ 
+     can_infer  fit_order  
+ 0        True         16  
+ 1        True         10  
+ 2        True          9  
+ 3        True         14  
+ 4        True         13  
+ 5        True         12  
+ 6        True         11  
+ 7        True          2  
+ 8        True          5  
+ 9        True          3  
+ 10       True         15  
+ 11       True          4  
+ 12       True          1  
+ 13       True          6  
+ 14       True          7  
+ 15       True          8  }</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="24tgFEH71AJQ" data-outputId="0e252345-9216-4de1-a76d-94d57402e2c0">
+<div class="sourceCode" id="cb72"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remember to set all negative values to zero</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>predictions_new_hpo <span class="op">=</span> predictor_new_hpo.predict(test)</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>predictions_new_hpo.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="52">
+<pre><code>0    12.321010
+1     4.840459
+2     2.453996
+3     2.556816
+4     2.501191
+Name: count, dtype: float32</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="1VJ_Ebtup14B" data-outputId="3120e80d-fe15-4434-c251-5a3fd5358c66">
+<div class="sourceCode" id="cb74"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>predictions_new_hpo.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="53">
+<pre><code>count    6493.000000
+mean      192.668579
+std       173.515671
+min         0.795873
+25%        46.917046
+50%       150.405624
+75%       285.167938
+max       899.032104
+Name: count, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="QgGa2HlkpsJ3" data-outputId="9310f4e9-45ac-4b05-d771-be8f462407d3">
+<div class="sourceCode" id="cb76"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>predictions_new_hpo[predictions_new_hpo<span class="op">&lt;</span><span class="dv">0</span>].<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="54">
+<pre><code>0.0</code></pre>
+</div>
+</div>
+<div class="cell code" id="aYl6s4HOpu6g">
+<div class="sourceCode" id="cb78"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>predictions_new_hpo[predictions_new_hpo<span class="op">&lt;</span><span class="dv">0</span>] <span class="op">=</span> <span class="dv">0</span></span></code></pre></div>
+</div>
+<div class="cell code" id="w7ruQPWT1AJQ">
+<div class="sourceCode" id="cb79"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Same submitting predictions</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>submission_new_hpo <span class="op">=</span> pd.read_csv(<span class="st">&quot;sampleSubmission.csv&quot;</span>, parse_dates<span class="op">=</span>[<span class="st">&quot;datetime&quot;</span>])</span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>submission_new_hpo[<span class="st">&quot;count&quot;</span>] <span class="op">=</span> predictions_new_hpo</span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>submission_new_hpo.to_csv(<span class="st">&quot;submission_new_hpo.csv&quot;</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="BZF9Ygqv1AJQ" data-outputId="6c828731-bc2e-40fe-eaad-9caaa3d4c0d3">
+<div class="sourceCode" id="cb80"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle competitions submit <span class="op">-</span>c bike<span class="op">-</span>sharing<span class="op">-</span>demand <span class="op">-</span>f submission_new_hpo.csv <span class="op">-</span>m <span class="st">&quot;new features with hyperparameters&quot;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>100% 188k/188k [00:00&lt;00:00, 440kB/s]
+Successfully submitted to Bike Sharing Demand</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="ug3SZjir1AJQ" data-outputId="e4dba367-f6e9-4c1d-9d69-5c54a8bf0f66">
+<div class="sourceCode" id="cb82"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle competitions submissions <span class="op">-</span>c bike<span class="op">-</span>sharing<span class="op">-</span>demand <span class="op">|</span> tail <span class="op">-</span>n <span class="op">+</span><span class="dv">1</span> <span class="op">|</span> head <span class="op">-</span>n <span class="dv">6</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>fileName                     date                 description                        status    publicScore  privateScore  
+---------------------------  -------------------  ---------------------------------  --------  -----------  ------------  
+submission_new_hpo.csv       2024-05-12 07:25:41  new features with hyperparameters  complete  0.46722      0.46722       
+submission_new_features.csv  2024-05-12 07:06:32  new features                       complete  0.61801      0.61801       
+submission.csv               2024-05-12 06:46:55  first raw submission               complete  1.89062      1.89062       
+submission.csv               2024-05-11 11:45:51  first raw submission               complete  1.80283      1.80283       
+</code></pre>
+</div>
+</div>
+<section id="new-score-of-" class="cell markdown" id="0fI_Jk0S1AJR">
+<h4>New Score of <code>?</code></h4>
+</section>
+<section id="step-7-write-a-report" class="cell markdown"
+id="xAUY0IGu1AJR">
+<h2>Step 7: Write a Report</h2>
+<h3 id="refer-to-the-markdown-file-for-the-full-report">Refer to the
+markdown file for the full report</h3>
+<h3 id="creating-plots-and-table-for-report">Creating plots and table
+for report</h3>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}"
+id="bA72xzMo1AJR" data-jupyter="{&quot;source_hidden&quot;:true}"
+data-outputId="9a384d25-ad8a-462c-aec0-099a7c407a23">
+<div class="sourceCode" id="cb84"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Taking the top model score from each training run and creating a line plot to show improvement</span></span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You can create these in the notebook and save them to PNG or use some other tool (e.g. google sheets, excel)</span></span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> pd.DataFrame(</span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb84-5"><a href="#cb84-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;model&quot;</span>: [<span class="st">&quot;initial&quot;</span>, <span class="st">&quot;add_features&quot;</span>, <span class="st">&quot;hpo&quot;</span>],</span>
+<span id="cb84-6"><a href="#cb84-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;score&quot;</span>: [<span class="fl">60.517</span>, <span class="fl">30.5075</span>, <span class="fl">34.57</span>]</span>
+<span id="cb84-7"><a href="#cb84-7" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb84-8"><a href="#cb84-8" aria-hidden="true" tabindex="-1"></a>).plot(x<span class="op">=</span><span class="st">&quot;model&quot;</span>, y<span class="op">=</span><span class="st">&quot;score&quot;</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>)).get_figure()</span>
+<span id="cb84-9"><a href="#cb84-9" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">&#39;model_train_score.png&#39;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="img/trainscore.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}"
+id="6y2LWT3b1AJR" data-outputId="40418c43-4f7e-49c3-8ef2-9787ded4b74a">
+<div class="sourceCode" id="cb85"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Take the 3 kaggle scores and creating a line plot to show improvement</span></span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> pd.DataFrame(</span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;test_eval&quot;</span>: [<span class="st">&quot;initial&quot;</span>, <span class="st">&quot;add_features&quot;</span>, <span class="st">&quot;hpo&quot;</span>],</span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;score&quot;</span>: [<span class="fl">1.8028</span>, <span class="fl">0.6180</span>, <span class="fl">0.4672</span>]</span>
+<span id="cb85-6"><a href="#cb85-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb85-7"><a href="#cb85-7" aria-hidden="true" tabindex="-1"></a>).plot(x<span class="op">=</span><span class="st">&quot;test_eval&quot;</span>, y<span class="op">=</span><span class="st">&quot;score&quot;</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>)).get_figure()</span>
+<span id="cb85-8"><a href="#cb85-8" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">&#39;model_test_score.png&#39;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="img/testscore.png" /></p>
+</div>
+</div>
+<section id="hyperparameter-table" class="cell markdown"
+id="CXr238Wk1AJR">
+<h3>Hyperparameter table</h3>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}"
+id="TfReBqGH1AJR" data-outputId="895be6d7-b536-45e9-cb07-272484c6ac20">
+<div class="sourceCode" id="cb86"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The 3 hyperparameters we tuned with the kaggle score as the result</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;model&quot;</span>: [<span class="st">&quot;initial&quot;</span>, <span class="st">&quot;add_features&quot;</span>, <span class="st">&quot;hpo&quot;</span>],</span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;time limit&quot;</span>: [<span class="dv">600</span>, <span class="dv">600</span>, <span class="dv">800</span>],</span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;presets&quot;</span>: [<span class="st">&#39;best_quality&#39;</span>, <span class="st">&#39;best_quality&#39;</span>, <span class="st">&#39;best_quality&#39;</span>],</span>
+<span id="cb86-6"><a href="#cb86-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;eval metric&quot;</span>: [<span class="st">&#39;root_mean_squared_error&#39;</span>, <span class="st">&#39;root_mean_squared_error&#39;</span>, <span class="st">&#39;root_mean_squared_error&#39;</span>],</span>
+<span id="cb86-7"><a href="#cb86-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;score&quot;</span>: [<span class="fl">1.8028</span>, <span class="fl">0.6180</span>, <span class="fl">0.4672</span>]</span>
+<span id="cb86-8"><a href="#cb86-8" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<div class="output execute_result" data-execution_count="69">
+
+  <div id="df-d57e2fab-8a39-4597-b039-8136be17a149" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>model</th>
+      <th>time limit</th>
+      <th>presets</th>
+      <th>eval metric</th>
+      <th>score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>initial</td>
+      <td>600</td>
+      <td>best_quality</td>
+      <td>root_mean_squared_error</td>
+      <td>1.8028</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>add_features</td>
+      <td>600</td>
+      <td>best_quality</td>
+      <td>root_mean_squared_error</td>
+      <td>0.6180</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>hpo</td>
+      <td>800</td>
+      <td>best_quality</td>
+      <td>root_mean_squared_error</td>
+      <td>0.4672</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d57e2fab-8a39-4597-b039-8136be17a149')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d57e2fab-8a39-4597-b039-8136be17a149 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d57e2fab-8a39-4597-b039-8136be17a149');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-b5be41b1-148c-4896-9cdf-d44553ca331a">
+  <button class="colab-df-quickchart" onclick="quickchart('df-b5be41b1-148c-4896-9cdf-d44553ca331a')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-b5be41b1-148c-4896-9cdf-d44553ca331a button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="oz63h4ohLise">
+<div class="sourceCode" id="cb87"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
